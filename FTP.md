@@ -27,5 +27,5 @@ You can do it using the command line, but a client software will make it much ea
     - Select your Protocol, SFTP or FTP
     - Put server address (host or IP)
     - Your username
-    - Tha password
+    - The password
 4. Click on connect
