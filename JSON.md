@@ -96,3 +96,4 @@ async function fetch( url ) {
 let myFetchedData = fetch('https://...');
 ```
 This example is a bit more complicated because of it’s asynchronous nature. (The JS code above is executed, then your browser requests the remote url, then there comes some response, which then gets parsed as json, and only then the `myFetchedData` holds that data. Until then it is a `unresolved promise`).
+More on working with JS JSON APIs on [The Coding Train](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X)
