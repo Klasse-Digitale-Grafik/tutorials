@@ -1,6 +1,6 @@
 # Tutorials
 
-Collection of helpful tutorials
+Growing collection of hopefully helpful tutorials.
 
 - [FTP](FTP.md)
 

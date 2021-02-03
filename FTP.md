@@ -7,7 +7,7 @@ SFTP is the secure alternative of FTP and is currently the standard for most ser
 ## Getting started
 
 To connect to a remote server via FTP, you will need:
-- The host domain or IP-Adress
+- The host domain or IP-Address
 - A username
 - A password
 
@@ -29,3 +29,18 @@ You can do it using the command line, but a client software will make it much ea
     - Your username
     - The password
 4. Click on connect
+
+You will now see the file structure of the remote server.
+
+## Troubleshooting
+
+If you can’t connect:
+- Are your credentials correct?
+- Can you connect to other FTP-Servers? (Some public WiFi networks don’t allow FTP)
+- If you had entered a remote path, does this path exist on the remote server?
+
+If you can’t edit:
+- Do you have editing rights? Especially on Servers of large organizations, rights are restricted to the required minimum. Maybe you will need to ask for editing rights.
+
+If it looks weird:
+- It can happen, that you landed in the root directory, which will look very confusing. Often you will look for a directory called `htdocs` or `www` or `web` or `docs` to land in the directory where websites live. Many FTP clients have an option to set a remote path (in Cyberduck this feature is apparently not very visible or inexistent) which would bring you directly to the desired folder.
