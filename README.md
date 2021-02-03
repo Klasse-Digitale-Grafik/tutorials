@@ -4,6 +4,7 @@ Growing collection of hopefully helpful tutorials.
 
 - [FTP](FTP.md)
 - [JSON](JSON.md)
+- [GIT](GIT.md)
 
 ## Contributing
 
