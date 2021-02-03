@@ -2,7 +2,7 @@
 
 FTP or SFTP lets you connect to the filesystem of a remote server, to upload or download files. Read more at [Wikipedia](https://en.wikipedia.org/wiki/File_Transfer_Protocol)
 
-SFTP is the secure alternative of FTP and is the standard for most servers or providers.
+SFTP is the secure alternative of FTP and is currently the standard for most servers or providers.
 
 ## Getting started
 
@@ -24,8 +24,8 @@ You can do it using the command line, but a client software will make it much ea
 1. Prepare your login credentials and open Cyberduck
 2. Click on `New Connection` or `Neue Verbindung`
 3. A new window pops up, enter your credentials:
-    1. Select your Protocol, SFTP or FTP
-    2. Put server address (host or IP)
-    3. Your username
-    4. Tha password
+    - Select your Protocol, SFTP or FTP
+    - Put server address (host or IP)
+    - Your username
+    - Tha password
 4. Click on connect

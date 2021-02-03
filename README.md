@@ -1,5 +1,4 @@
 # Tutorials
 Collection for helpful tutorials
 
-## Tutorials
-- (FTP)[FTP.md]
+- [FTP](FTP.md)
