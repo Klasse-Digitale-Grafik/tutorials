@@ -2,6 +2,8 @@
 
 Json is a format that structures JS objects and arrays so that they can be stored as file or sent around between several services. Common usecases are APIs or storing data in a quickly accessible format.
 
+[Wikipedia](https://en.wikipedia.org/wiki/JSON)
+
 ## File format
 
 For objects:
