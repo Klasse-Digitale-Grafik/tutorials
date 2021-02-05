@@ -68,12 +68,11 @@ The Markdown format can be stored in `.md` files and later be parsed, e.g. to cr
 
 **Preformatted text or code blocks** → `<pre>`
 ```md
-\```html
+```html
 <html>
   <head></head>
   <body></body>
 <html>
-\```
 ```
 
 **Inline code** → `<code>`
@@ -88,7 +87,7 @@ You can even do tables, but that’s really hard. A more comprehensive documenta
 As you may noticed, some elements are quite similar to HTML. It is a fairly common usecase, to store formatted text as md and then later convert that to HTML.
 Also, MarkDown is an extension to HTML, building on top of it. That means that all HTML is also valid inside Markdown text. This gives you way more option, e.g. for images sizes, media embeds, ...
 
-## Tools
+## Further reading
 
 - Live Markdown Editor [Markdown-It](https://markdown-it.github.io)
 - Parse Md with JS [Markdown-It](https://github.com/markdown-it/markdown-it)
