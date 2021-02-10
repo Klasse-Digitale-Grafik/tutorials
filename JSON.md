@@ -1,10 +1,10 @@
-# JSON
+# JSON (JavaScript Object Notation)
 
 Json is a format that structures JS objects and arrays so that they can be stored as file or sent around between several services. Common usecases are APIs or storing data in a quickly accessible format.
 
 [Wikipedia](https://en.wikipedia.org/wiki/JSON)
 
-## File format
+## 📄 File format
 
 For objects:
 
@@ -30,7 +30,7 @@ Items or values can either be of the `string` type (`"text"`), `int` (full numbe
 
 For valid natotaion, you will have to use double quotes `"` and have no comma after that last entry.
 
-## Working with JSON in PHP
+## 🐘 Working with JSON in PHP
 
 JSON can be easily encoded and decoded with php using [json_decode](https://www.php.net/manual/de/function.json-decode.php) and [json_encode](https://www.php.net/manual/de/function.json-encode.php).
 
@@ -79,7 +79,7 @@ $data = [
 </script>
 ```
 
-## Working with JSON in JavaScript
+## 🦇 Working with JSON in JavaScript
 
 **Example 4)** If you want to access a remote API endpoint or if you created your own (see example 3), you can `fetch` that data using JS:
 ```js

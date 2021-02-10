@@ -6,7 +6,7 @@ Read more on [Wikipedia](https://en.wikipedia.org/wiki/File_Transfer_Protocol)
 
 SFTP is the secure successor of FTP and is currently the standard for many servers or providers.
 
-## Getting started
+## 🎉 Getting started
 
 To connect to a remote server via FTP, you will need:
 - The host domain or IP-Address
@@ -21,7 +21,7 @@ Is’s possible via command line, but a client software will make it much easier
 - [Cyberduck](https://cyberduck.io). Free, Mac, Windows
 - [FileZilla](https://filezilla-project.org). Free, Mac, Windows
 
-## Connecting with Cyberduck
+## 🦆 Connecting with Cyberduck
 
 1. Prepare your login credentials and open Cyberduck
 2. Click on `New Connection` or `Neue Verbindung`
@@ -34,13 +34,13 @@ Is’s possible via command line, but a client software will make it much easier
 
 You will now see the file structure of the remote server.
 
-## Uploading and editing files
+## 📤 Uploading and editing files
 
 - For uploading you can drag files onto the window or synchronize a local folder with a remote folder
 - You can also edit files, by left-clicking on it, and the select to open it with a text editor of your choice
 - Downloading is easy, just drag the files you need somewhere onto your computer
 
-## Troubleshooting
+## 🛠 Troubleshooting
 
 If you can’t connect:
 - Are your credentials correct?

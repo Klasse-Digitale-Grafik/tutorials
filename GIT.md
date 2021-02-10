@@ -7,7 +7,7 @@ Read more on [Wikipedia](https://de.wikipedia.org/wiki/Git)
 **GitHub** is an online plaform, where Git users can manage their projects in the cloud. So you can get (`clone`) a repo, work on it locally and later `push` your work to the central source of truth.
 A Platform like GitHub offers the possibility, that many users can collaborate on one project.
 
-## Getting started
+## 🎉 Getting started
 
 1. [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
