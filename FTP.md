@@ -46,6 +46,7 @@ If you can’t connect:
 - Are your credentials correct?
 - Can you connect to other FTP-Servers? (Some public WiFi networks don’t allow FTP)
 - If you had entered a remote path, does this path exist on the remote server?
+- When using SFTP with FileZilla, you might have to prepend `sftp://` to your server address
 
 If you can’t edit:
 - Do you have editing rights? Especially on servers of large organizations, rights are restricted to the required minimum. Maybe you will need to ask for editing rights.
