@@ -14,7 +14,7 @@ A Platform like GitHub offers the possibility, that many users can collaborate o
 2. Open your terminal and navigate somewhere where you want to work, e.g. `cd hfbk`. Or juyt type `cd ` and drag a folder from you finder into the terminal, hit enter.
 
 3. Get a clone of this very repo:
-```
+```console
 git clone git@github.com:Klasse-Digitale-Grafik/tutorials.git
 ```
 Once that is done, close the terminal and navigate to that newly created folder (e.g. `hfbk/tutorials`)
