@@ -2,11 +2,12 @@
 
 Growing collection of hopefully helpful tutorials.
 
-- [FTP/SFTP](FTP.md)
-- [GIT](GIT.md)
-- [JSON](JSON.md)
+- [Command Line](CommandLine.md)
+- [FTP/SFTP FIle Transfer](FTP.md)
+- [GIT & GitHub](GIT.md)
+- [JSON Java Script Object Notation](JSON.md)
 - [Markdown](Markdown.md)
-- [SSH](SSH.md)
+- [SSH Secure Shell](SSH.md)
 
 ## 👪 Contributing
 
