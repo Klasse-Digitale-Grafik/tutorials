@@ -12,7 +12,7 @@ You will need:
 - Password
 
 1. Open your terminal and type
-```console
+```bash
 ssh {username}@{hostname or address}
 # now you will be asked for the password
 ```
