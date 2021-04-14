@@ -30,6 +30,7 @@ Some providers that offer as-easy-as-possible webhosting:
 - [Ionos](https://www.ionos.de/hosting/webhosting)
 - [Netcup](https://www.netcup.de/hosting/)
 - [webgo](https://www.webgo.de/ssd-webhosting/)
+- [Velogrid](https://www.velogrid.com/)
 
 ## The more complex way
 
