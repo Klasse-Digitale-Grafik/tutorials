@@ -18,6 +18,7 @@ These are the specs that you should look for:
 - SFTP
 - PHP >= 7.4
 - Serverlocation (Germany/Europe)
+
 Depending on your needs:
 - Database
 - Node.js
