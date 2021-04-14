@@ -28,9 +28,10 @@ Some providers that offer as-easy-as-possible webhosting:
 - [DomainFactory](https://www.df.eu/de/webhosting/)
 - [HostEurope](https://www.hosteurope.de/webhosting-loesungen/)
 - [Ionos](https://www.ionos.de/hosting/webhosting)
+- [One](https://www.one.com/de/#PlansAndPrices)
 - [Netcup](https://www.netcup.de/hosting/)
-- [webgo](https://www.webgo.de/ssd-webhosting/)
 - [Velogrid](https://www.velogrid.com/)
+- [Webgo](https://www.webgo.de/ssd-webhosting/)
 
 ## The more complex way
 
