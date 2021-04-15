@@ -12,7 +12,8 @@ For objects:
 {
     "key1": "string value",
     "key2": 2,
-    "key3": "0.999"
+    "key3": "0.999",
+    "key4": true
 }
 ```
 
@@ -22,11 +23,12 @@ For arrays:
 [
     "string item",
     2,
-    "0.999"
+    "0.999",
+    true
 ]
 ```
 
-Items or values can either be of the `string` type (`"text"`), `int` (full numbers, e.g `2`). If you have other data tyepes like `float` (floating point numbers, like `0.999`), they will be converted to string, e.g. `"0.999"`.
+Items or values can either be of the `string` type (`"text"`), `int` (full numbers, e.g `2`) or `bool` (`true` or `false`). If you have other data tyepes like `float` (floating point numbers, like `0.999`), they will be converted to string, e.g. `"0.999"`.
 
 For valid natotaion, you will have to use double quotes `"` and have no comma after that last entry.
 
