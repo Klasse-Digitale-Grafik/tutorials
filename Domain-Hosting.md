@@ -72,6 +72,12 @@ There are various reasons, why you may end up with a more complicated setup, e.g
 - [Linode](https://www.linode.com/products/shared/)
 - [Ionos](https://www.ionos.de/server/vps#tarife)
 
+## Glossary
+- **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a User-Interface to configure the server behaviour.
+- **Shared** means that you share the physical machine with other customers, which is the most common practice and also consumes less electricity.
+- **Dedicated** is the opposite of shared, meaning that you alone execute on your machine.
+- **Virtual Sever (vServer/VPS)** is a shared server, that feels like a dedicated server offering you full control over the operating system. But still you share the physical machine.
+
 ## Email
 
 coming...
