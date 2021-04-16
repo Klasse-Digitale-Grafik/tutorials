@@ -103,9 +103,11 @@ Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3
 
 ## 🧮 Layout
 
-**The Box Model concept**
-- [Box model](https://www.w3schools.com/css/css_boxmodel.asp)
-- [Box sizing](https://developer.mozilla.org/de/docs/Web/CSS/box-sizing)
+**The Box Model**
+When working with properties like `width`, `height`, `margin`, `border` and `padding` it is really helpful to understand the box model concept:
+- [The box model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [Box sizing](https://developer.mozilla.org/de/docs/Web/CSS/box-sizing) to control the box model
+- [Collapsing margins](https://www.joshwcomeau.com/css/rules-of-margin-collapse/)
 
 **`position:`**
 - [CSS-Tricks](https://css-tricks.com/almanac/properties/p/position/)
@@ -281,3 +283,4 @@ When you don’t want to handle every edge case yourself, a CSS framework can he
 - [CanIUse](https://caniuse.com) for checking browser support
 - [Codepen](https://codepen.io/pen/) for quick experiments
 - [State fo CSS](https://stateofcss.com) annual census
+- [Tutorials by Josh Comeau](https://www.joshwcomeau.com/tutorials/css/)
