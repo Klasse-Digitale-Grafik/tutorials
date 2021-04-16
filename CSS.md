@@ -190,17 +190,18 @@ Learn more:
 
 ## 🎆 Effects
 
+- [Animation](https://css-tricks.com/almanac/properties/a/animation/)
+- [Filter](https://css-tricks.com/almanac/properties/f/filter/)
 - [Transform](https://css-tricks.com/almanac/properties/t/transform/)
 - [Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
-- [Animation](https://css-tricks.com/almanac/properties/a/animation/)
 
 And of course
-[Border-radius](https://www.w3schools.com/cssref/css3_pr_border-radius.asp),
 [box-shadow](https://www.cssmatic.com/box-shadow),
+[border-radius](https://www.w3schools.com/cssref/css3_pr_border-radius.asp),
 [text-shadow](https://css-tricks.com/almanac/properties/t/text-shadow/),
-[outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline),
-[sticky](https://css-tricks.com/position-sticky-2/),
 [gradients](https://www.cssmatic.com/gradient-generator),
+[sticky](https://css-tricks.com/position-sticky-2/),
+[outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline),
 [scroll-behaviour](https://css-tricks.com/almanac/properties/s/scroll-behavior/), ...
 
 ## 📝 Webfonts
