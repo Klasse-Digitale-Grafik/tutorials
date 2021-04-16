@@ -22,8 +22,8 @@ The most important selectors are:
 - `[attr]` select elements that have a given attribute
 - `parent descendant` select elements inside some other elements
 - `parent > child` select elements that are direct children of given parent elements
-- `element1 ~ element2` select elements that eventually follow some other elements
 - `element1 + element2` select elements that directly follow some other elements
+- `element1 ~ element2` select elements that eventually follow some other elements
 - `element1, element2` combine multiple selectors
 
 Learn more:
@@ -31,7 +31,7 @@ Learn more:
 - [CSS Diner](https://flukeout.github.io) selector training game
 
 ### Rules
-There are various rules that you can apply to your element to control its appeareance.
+There are various rules that you can apply to an element to control its appeareance.
 ```css
 h1 {
     color: red;
@@ -49,9 +49,9 @@ h1 {
 
 ### Cascading and inheritance
 One of CSS’ key characteristics is the power of inheritance, which means:
-1. A selector always selects all matching elements.
-2. All rules applied to an element will populate down to all it’s children ("cascading"), as long as they’re not overwritten.
-3. With the `inherit` value, child elements can explicitly inherit a rule from its ancestors.
+1. A selector always selects all matching elements
+2. All rules applied to an element will populate down to all it’s children ("cascading"), as long as they’re not overwritten
+3. With the `inherit` value, child elements can explicitly inherit a rule from its ancestors
 
 ### Units
 Most common CSS units are:
@@ -72,20 +72,19 @@ Learn more:
 ### Bringing CSS into HTML
 Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3schools.com/css/css_howto.asp):
 
-**Inline**, using `style` attribute (use only for small exceptions of the rule)
+**Inline**, using the `style` attribute (use only for small exceptions of the rule)
 ```html
 <h1 style="color: red;">Headline</div>
 ```
 
-**Within HTML `head`** (use for small stylesheets)
+**Within the `head`** (use for small stylesheets)
 ```html
-<head>
-    <style>
-        h1 { color: red; }
-    </style>
+<style>
+    h1 { color: red; }
+</style>
 ```
 
-**Seperate `.css` file**, referenced from within the HTML `head` (normal usecase)
+**Seperate `.css` file**, referenced from within the `head` (normal usecase)
 ```html
 <link rel="stylesheet" href="styles.css">
 ```
@@ -94,7 +93,7 @@ Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3
 
 **Position**
 - [CSS-Tricks](https://css-tricks.com/almanac/properties/p/position/)
-- [Learn CSS Positioning with Ahmad Shadeed](https://ishadeed.com/article/learn-css-positioning/)
+- [Learn CSS Positioning](https://ishadeed.com/article/learn-css-positioning/) by Ahmad Shadeed
 
 **Flex**
 - [CSS-Tricks Complete guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -109,10 +108,10 @@ Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3
 
 Learn more:
 - [w3scools CSS Layout](https://www.w3schools.com/css/css_website_layout.asp)
-- [Learn CSS Box Alignment with Ahmad Shadeed](https://ishadeed.com/article/learn-box-alignment/) game
+- [Learn CSS Box Alignment](https://ishadeed.com/article/learn-box-alignment/) by Ahmad Shadeed
 
 ## 📱 Responsive design and media queries
-Using media queries, you can control that certain CSS code gets only applied, when the user device matches a specific rule. This is helpful to adjust a website design for small or large screens or when it’s being printed.
+Using media queries, you can control that certain CSS code gets only applied, when the user device matches a specific rule. This is helpful to adjust a website design for small or large screens or e.g. when it’s being printed.
 
 ```css
 /* on small screens show items as list */
@@ -137,24 +136,31 @@ Using media queries, you can control that certain CSS code gets only applied, wh
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+@media print {
+    /* border instead of background-color */
+    .grid .item {
+        background-color: transparent;
+        border: 1px solid grey;
+    }
+}
 ```
 
 You can also add seperate stylesheets that only will be loaded, once the media query matches:
 ```html
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="screen.css" media="screen">
-<link rel="stylesheet" href="scree-large.css" media="screen and (min-width: 900px)">
+<link rel="stylesheet" href="screen-large.css" media="screen and (min-width: 900px)">
 <link rel="stylesheet" href="print.css" media="print">
 ```
 
 - [Media queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
-- [Hyphenation]((https://medium.com/clear-left-thinking/all-you-need-to-know-about-hyphenation-in-css-2baee2d89179)) and [word breaks](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
+- [Hyphenation](https://medium.com/clear-left-thinking/all-you-need-to-know-about-hyphenation-in-css-2baee2d89179) and [word breaks](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
 
 **Mobile first paradigm**
 means that you first define all the rules required for the layout on a mobile device and later add or override the design for larger screens using media queries or a second css file. This makes sense because usually devices with larger screens have more compute power and faster internet than smaller devices.
 
 ## 🎨 CSS Variables
-With CSS variables you can make your design more modular and changable, even on the client-side:
+With CSS variables you can make your design more modular and changable:
 ```css
 ::root {
     /* define */
@@ -199,8 +205,8 @@ More on [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 ## 🚨 Browser support and default values
 Not all rules and features are supported by all browsers. Some rules are even interpreted differently across browsers. Especially for new or fancy features, you should check for browser support:
 
-- [CanIUse Archive of browser support](https://caniuse.com)
-- [Supported rules](https://www.w3schools.com/cssref/css3_browsersupport.asp)
+- [CanIUse](https://caniuse.com) Archive of browser support
+- [w3schools](https://www.w3schools.com/cssref/css3_browsersupport.asp) list of supported rules
 
 Sometimes browsers (especially older versions) ignore a rule and only apply it when you add a ["vendor-prefix"](https://bitsofco.de/css-vendor-prefixes/):
 ```css
@@ -233,15 +239,15 @@ The most basic CSS reset would be
     vertical-align: baseline;
 }
 ```
-which you can add on top of all your css to resets (almost) all default rules that could mess up your design.
+which you can add on top of all your css to reset (almost) all default rules that could mess up your design.
 
 ## 🛠 Tooling and Preprocessors
 There are several tools, that can help you to make your CSS work easier. Preprocessors allow you to write your css in a more readable and reusable way and then compile it to real css that browsers can handle:
-- [Sass/Scss](https://sass-lang.com)
+- [SASS/SCSS](https://sass-lang.com)
 - [PostCSS](https://postcss.org)
 
 ## 🧩 Frameworks
-When you don’t want to handle every edge case yourself, a CSS framework could help. This is especially helpful for grid systems, forms and user interfaces:
+When you don’t want to handle every edge case yourself, a CSS framework can help. This is especially helpful for grid systems, forms and user interfaces:
 
 - [Tailwind](https://tailwindcss.com) framework
 - [Pure.css](https://purecss.io) framework
