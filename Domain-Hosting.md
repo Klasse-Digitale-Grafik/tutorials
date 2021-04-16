@@ -3,11 +3,10 @@
 A **website** and a **domain** are two different things: The **website is a collection** of files that can be rendered by your browser. These files are stored on some **server**, a computer that is always connected to the internet and which can be accessed by "calling" it’s **IP address**. And then there is a domain, which redirects your request to that servers IP address. Because on one server with one IP address, there can be multiple websites, the domain is also used by the server to determine which directory of files should be delivered.
 
 ## The easy way
-
 The easiest is to have domain, email and webhosting with one provider. Many providers call this product "webhosting", and often there is almost nothing that can go wrong:
 - Buy a webhosting package and select an available domain
 - Create an FTP user and upload your website to the webspace
-- Go to domain settings and direct the website to that directory where you uploaded the website
+- Go to domain settings and direct the domain to that directory where you uploaded the website
 - (Set up an email address)
 
 This kind of webhosting is mostly running Apache or nginx on a shared Linux machine and is suitable for simple websites made with HTML or generated with PHP, like Kirby or Wordpress.
@@ -58,10 +57,7 @@ There are various reasons, why you may end up with a more complicated setup, e.g
 - [INWX](https://www.inwx.de/de)
 
 ### Node.js, CI-Deploys, Server-Side-Rendering with JS-Frameworks
-wehen you are working with static site generators or JS-Frameworks like
-[Next.js](https://nextjs.org)([React](https://reactjs.org)),
-[Nuxt](https://nuxtjs.org)([Vue](https://vuejs.org)) or
-[Sapper](https://sapper.svelte.dev)([Svelte](https://svelte.dev))
+wehen you are working with static site generators like Hugo, 11ty, Gatsby or JS-Frameworks like Next, Nuxt, Sapper.
 - [Begin](https://begin.com)
 - [Ionos Deploy Now](https://www.ionos.de/hosting/deploy-now)
 - [Netlify](https://www.netlify.com)
@@ -86,7 +82,3 @@ where you start with the bare operating system and install everything yourself
 - **Virtual Sever (vServer/VPS)** is a shared server, that feels like a dedicated server offering you full control over the operating system. But still you share the physical machine.
 - **AMP Stack** Apache + MySQL + PHP is the classic website software stack, required for Kirby or Wordpress-websites.
 - **JAM Stack** JavaScript + API Data + Markup (HTML) is the upcoming software stack, that runs a JS-Framework (Vue, React, Svelte or Angular) both on the server (Node.js) and client side, consumes it’s content from some API and generates HTML from it.
-
-## Email
-
-coming...
