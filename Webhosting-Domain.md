@@ -27,25 +27,25 @@ Depending on your needs:
 - SSH
 
 ### Providers
-Some providers that offer as-easy-as-possible webhosting (together with the most affordable option):
-- [Dogado](https://www.dogado.de/website/hosting)
-€4: 3 domains, 75GB SSD
-- [DomainFactory](https://www.df.eu/de/webhosting/)
-€5: 1 SSL, 25 GB
+Some providers that offer as-easy-as-possible webhosting (sorted by cost of the most affordable option):
+- [Netcup](https://www.netcup.de/hosting/)
+€2: 1 domain, SSL, 50GB SSD
 - [Hetzner](https://www.hetzner.com/de/webhosting)
 €2: 1 domain, SSL, 10GB SSD
+- [Velogrid](https://www.velogrid.com/)
+€3: 1 domain + 1GB / 0 domains + 10GB, SSL
 - [HostEurope](https://www.hosteurope.de/webhosting-loesungen/)
 €3,50: 100GB
+- [Strato](https://www.strato.de/hosting/)
+€4: 3 domains, 1 SSL, 50GB
+- [Dogado](https://www.dogado.de/website/hosting)
+€4: 3 domains, 75GB SSD
 - [Ionos](https://www.ionos.de/hosting/webhosting)
 €4: 1 domain, 1 SSL, 50GB
 - [One](https://www.one.com/de/#PlansAndPrices)
-$4: 1 SSL, 50GB SSD
-- [Netcup](https://www.netcup.de/hosting/)
-€2: 1 domain, SSL, 50GB SSD
-- [Strato](https://www.strato.de/hosting/)
-4€: 3 domains, 1 SSL, 50GB
-- [Velogrid](https://www.velogrid.com/)
-€3: 1 domain + 1GB / 0 domains + 10GB, SSL
+€4: 1 SSL, 50GB SSD
+- [DomainFactory](https://www.df.eu/de/webhosting/)
+€5: 1 SSL, 25 GB
 - [Webgo](https://www.webgo.de/ssd-webhosting/)
 8€: 3 domains, SSL, 25GB SSD
 
