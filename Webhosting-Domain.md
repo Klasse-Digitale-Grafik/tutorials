@@ -89,14 +89,15 @@ When you need full control and are willing to start with the bare operating syst
 - [Linode](https://www.linode.com/products/shared/) `€5`
 
 ## 💸 Prices
-All prices as of April 2021. Usually, the price correlates with performance and the quality of the support. Products sorted by the cost of the most affordable option.
+All prices as of April 2021. Products sorted by the cost of the most affordable option. Usually, the price correlates with performance and the quality of the support.
 
 ## 📒 Glossary
 - **(Web-)Hosting** often means an AMP-instance where you can run code (e.g. PHP) or databases and serve files (read more above)
-- **Server** often means a (virtual) computer, that you can configure to your own needs
-- **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a user-interface (e.g. Plesk) to configure the server behaviour
+- **Server** often means a (virtual) computer, that you can configure to your own needs. Of course you can also install a AMP environment to serve your website. But in some cases you will have install all the software yourself.
+- **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a user-interface (e.g. Plesk) to configure the server behaviour and install software
 - **Shared, virtual, vServer, VPS** means that you share the physical machine with other customers, which is the most common practice and also consumes less electricity
 - **Dedicated** is the opposite of shared, meaning that you alone execute on one physical machine
 - **Availability** % of time, the service/machine is accessable from the internet. 99.9% uptime means 45min downtime per month
 - **AMP Stack** Apache + MySQL + PHP is the classic website software stack, required for Kirby or Wordpress-websites
 - **JAM Stack** JavaScript + API Data + Markup (HTML) is the upcoming software stack, that runs a JS-Framework (Vue, React, Svelte or Angular) both on the server (Node.js) and client side, consumes it’s content from some API and generates HTML from it
+- **SSL certificates** are required to show your website via the `https://` protocol. Many providers charge an expensive premium for that, while others offer you unlimited Let’s encrypt certificates. When domain and hosting are seperated, the certificate can be installed both on the domain or on the hosting side.
