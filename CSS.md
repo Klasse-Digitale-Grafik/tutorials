@@ -151,7 +151,7 @@ You can also add seperate stylesheets that only will be loaded, once the media q
 - [Hyphenation]((https://medium.com/clear-left-thinking/all-you-need-to-know-about-hyphenation-in-css-2baee2d89179)) and [word breaks](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
 
 **Mobile first paradigm**
-means that you first define all the rules required for the layout on a mobile device and later add or override the design for larger screens using media queries or a seconds css file. This makes sense because usually devices with larger screens have more compute power and faster internet than smaller devices.
+means that you first define all the rules required for the layout on a mobile device and later add or override the design for larger screens using media queries or a second css file. This makes sense because usually devices with larger screens have more compute power and faster internet than smaller devices.
 
 ## 🎨 CSS Variables
 With CSS variables you can make your design more modular and changable, even on the client-side:
@@ -233,10 +233,10 @@ The most basic CSS reset would be
     vertical-align: baseline;
 }
 ```
-which you can add on to of all your css to resets (almost) all default rules that could mess up cour design.
+which you can add on top of all your css to resets (almost) all default rules that could mess up your design.
 
 ## 🛠 Tooling and Preprocessors
-There are several tools, that can help you to make your CSS work easier. Preprocessors allow you to write your css in a more readable and reusable way and then compile it to real css that browsers can handle. Common examples are:
+There are several tools, that can help you to make your CSS work easier. Preprocessors allow you to write your css in a more readable and reusable way and then compile it to real css that browsers can handle:
 - [Sass/Scss](https://sass-lang.com)
 - [PostCSS](https://postcss.org)
 
@@ -250,9 +250,9 @@ When you don’t want to handle every edge case yourself, a CSS framework could 
 
 ## 🔗 More resources
 
-- [MDN Mozilla Docs](https://developer.mozilla.org/de/docs/Web/CSS)
-- [CSS-Tricks Almanac](https://css-tricks.com/almanac/)
-- [w3scools](https://www.w3schools.com/css/default.aspcodepen)
+- [MDN Mozilla Docs](https://developer.mozilla.org/de/docs/Web/CSS) reference
+- [CSS-Tricks Almanac](https://css-tricks.com/almanac/) reference
+- [w3scools](https://www.w3schools.com/css/default.aspcodepen) reference
 - [CanIUse](https://caniuse.com) for checking browser support
 - [Codepen](https://codepen.io/pen/) for quick experiments
 - [State fo CSS](https://stateofcss.com) annual census

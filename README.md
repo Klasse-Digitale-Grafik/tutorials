@@ -4,11 +4,11 @@ Growing collection of hopefully helpful tutorials.
 
 - [CSS](CSS.md)
 - [Command Line](CommandLine.md)
-- [FTP/SFTP FIle Transfer](FTP.md)
+- [Domain & Hosting](Domain-Hosting.md)
+- [FTP/SFTP File Transfer](FTP.md)
 - [GIT & GitHub](GIT.md)
 - [JSON Java Script Object Notation](JSON.md)
 - [Markdown](Markdown.md)
-- [Domain & Hosting](Domain-Hosting.md)
 - [SSH Secure Shell](SSH.md)
 
 ## 👪 Contributing
