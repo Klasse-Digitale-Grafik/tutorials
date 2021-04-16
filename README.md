@@ -2,14 +2,24 @@
 
 Growing collection of hopefully helpful tutorials.
 
-- [CSS](CSS.md)
+- [CSS Cascading Style Sheets](CSS.md)
 - [Command Line](CommandLine.md)
-- [Domain & Hosting](Domain-Hosting.md)
+- CMS Content Management Systems*
 - [FTP/SFTP File Transfer](FTP.md)
 - [GIT & GitHub](GIT.md)
+- HTML*
+- IDE (Code-Editor)*
+- Java Script*
 - [JSON Java Script Object Notation](JSON.md)
 - [Markdown](Markdown.md)
+- PHP*
+- Programming basics*
+- Sass/Scss*
 - [SSH Secure Shell](SSH.md)
+- [Webhosting & Domain](Webhosting-Domain.md)
+- Website development*
+
+(*ideas for future articles)
 
 ## 👪 Contributing
 
