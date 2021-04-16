@@ -69,17 +69,17 @@ Learn more:
 
 ### Colors
 You can define colors in a few different ways, eg:
-- `blue` there are 140 default colors with names like `azure`, `mintcream` and `springgreen`
+- `blue` there are 140 [default colors](https://www.w3schools.com/cssref/css_colors.asp) with names like `azure`, `mintcream` and `springgreen`
+- `currentColor` current or inherited text color
 - `#00f` 4-bit hex (`0` = `0`, `9` = `127`, `f` = `255`)
 - `#0000ff` 8-bit hex (`00` = `0`, `99` = `127`, `ff` = `255`)
-- `rgb(0,0,255)`
-- `rgba(0,0,255, 0.5)` with opacity between `0` and `1`
-- `hsl(240, 100%, 50%)`
-- `currentColor` current or inherited text color
+- `rgb( 0, 0, 255)`
+- `rgba( 0, 0, 255, 0.5)` with opacity between `0` and `1`
+- `hsl( 240, 100%, 50%)` (hue, saturation, lightness)
+- `cmyk( 100, 100, 0, 0)`
 
 Read more:
 - [w3schools](https://www.w3schools.com/colors/default.asp)
-- [List of all CSS default colors](https://www.w3schools.com/cssref/css_colors.asp)
 
 ### Bringing CSS into HTML
 Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3schools.com/css/css_howto.asp):
