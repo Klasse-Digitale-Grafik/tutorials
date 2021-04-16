@@ -2,7 +2,7 @@
 
 A **website** and a **domain** are two different things: The **website is a collection** of files that can be rendered by your browser. These files are stored on some **server**, a computer that is always connected to the internet and which can be accessed by "calling" it’s **IP address**. And then there is a domain, which redirects your request to that servers IP address. Because on one server with one IP address, there can be multiple websites, the domain is also used by the server to determine which directory of files should be delivered.
 
-## 🌍 The easy way
+## 🌱 The easy way
 The easiest is to have domain, email and webhosting with one provider. Many providers call this product "webhosting", and often there is almost nothing that can go wrong:
 - Buy a webhosting package and select an available domain
 - Create an FTP user and upload your website to the webspace
@@ -49,7 +49,7 @@ Some providers that offer as-easy-as-possible webhosting:
 - [Webgo](https://www.webgo.de/ssd-webhosting/)
 `8€` 3 domains, ∞SSL, 25GB SSD
 
-## More complex ways
+## 🌳 More complex ways
 
 There are various reasons, why you may end up with a more complicated setup, e.g.:
 - You need more compute power, e.g. to handle many requests, a large database, many files, ...
