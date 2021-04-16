@@ -58,6 +58,10 @@ There are various reasons, why you may end up with a more complicated setup, e.g
 - [INWX](https://www.inwx.de/de)
 
 ### Node.js, CI-Deploys, Server-Side-Rendering with JS-Frameworks
+wehen you are working with static site generators or JS-Frameworks like
+[Next.js](https://nextjs.org)([React](https://reactjs.org)),
+[Nuxt](https://nuxtjs.org)([Vue](https://vuejs.org)) or
+[Sapper](https://sapper.svelte.dev)([Svelte](https://svelte.dev))
 - [Begin](https://begin.com)
 - [Ionos Deploy Now](https://www.ionos.de/hosting/deploy-now)
 - [Netlify](https://www.netlify.com)
@@ -81,7 +85,7 @@ where you start with the bare operating system and install everything yourself
 - **Dedicated** is the opposite of shared, meaning that you alone execute on your machine.
 - **Virtual Sever (vServer/VPS)** is a shared server, that feels like a dedicated server offering you full control over the operating system. But still you share the physical machine.
 - **AMP Stack** Apache + MySQL + PHP is the classic website software stack, required for Kirby or Wordpress-websites.
-- **JAM Stack** JavaScript + API Data + Markup (HTML) is the upcoming software stack, that runs JS both on the server (Node.js) and client side, consumes it’s content from some API and generates HTML from it.
+- **JAM Stack** JavaScript + API Data + Markup (HTML) is the upcoming software stack, that runs a JS-Framework (Vue, React, Svelte or Angular) both on the server (Node.js) and client side, consumes it’s content from some API and generates HTML from it.
 
 ## Email
 
