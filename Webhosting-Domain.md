@@ -29,11 +29,11 @@ Depending on your needs:
 ### Providers
 Some providers that offer as-easy-as-possible webhosting (sorted by cost of the most affordable option):
 - [Netcup](https://www.netcup.de/hosting/)
-`€2` 1 domain, SSL, 50GB SSD
+`€2` 1 domain, ∞SSL, 50GB SSD
 - [Hetzner](https://www.hetzner.com/de/webhosting)
-`€2` 1 domain, SSL, 10GB SSD
+`€2` 1 domain, ∞SSL, 10GB SSD
 - [Velogrid](https://www.velogrid.com/)
-`€3` 1 domain + 1GB / 0 domains + 10GB, SSL
+`€3` 1 domain + 1GB / 0 domains + 10GB, ∞SSL
 - [HostEurope](https://www.hosteurope.de/webhosting-loesungen/)
 `€3,50` 100GB
 - [Strato](https://www.strato.de/hosting/)
@@ -47,7 +47,7 @@ Some providers that offer as-easy-as-possible webhosting (sorted by cost of the 
 - [DomainFactory](https://www.df.eu/de/webhosting/)
 `€5` 1 SSL, 25 GB
 - [Webgo](https://www.webgo.de/ssd-webhosting/)
-`8€` 3 domains, SSL, 25GB SSD
+`8€` 3 domains, ∞SSL, 25GB SSD
 
 ## More complex ways
 
@@ -66,27 +66,30 @@ You will have to connect an external domain
 
 ### Domain only providers
 You will have to connect to an external target host
-- [UnitedDomains](https://www.united-domains.de/domain-registrieren/preisliste/)
-- [INWX](https://www.inwx.de/de)
+- [INWX](https://www.inwx.de/de) `€5` .de `€13` .com
+- [UnitedDomains](https://www.united-domains.de/domain-registrieren/preisliste/) `19€` .de .com
 
 ### Node.js, CI-Deploys, Server-Side-Rendering with JS-Frameworks
 When working with static site generators like Hugo, 11ty, Gatsby or JS-Frameworks like Next, Nuxt, Sapper, this kind of hosting can automate and simplify your workflow
-- [Begin](https://begin.com)
-- [Ionos Deploy Now](https://www.ionos.de/hosting/deploy-now)
-- [Netlify](https://www.netlify.com)
-- [Vercel](https://vercel.com)
+- [Begin](https://begin.com) `free`
+- [Vercel](https://vercel.com) `free`
+- [Netlify](https://www.netlify.com) `free` personal account
+- [Ionos Deploy Now](https://www.ionos.de/hosting/deploy-now) `free` public beta
 
 ### Static file hosting
 When you only need to deliver files as they are (no execution or compute)
-- [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)
-- [GitHub Pages](https://pages.github.com)
-- [Surge.sh](https://surge.sh)
+- [GitHub Pages](https://pages.github.com) `free`
+- [Surge.sh](https://surge.sh) `free`
+- [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/) `€5`
 
 ### Linux server
 When you need full control and are willing to start with the bare operating system
-- [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets/)
-- [Ionos](https://www.ionos.de/server/vps#tarife)
-- [Linode](https://www.linode.com/products/shared/)
+- [Ionos](https://www.ionos.de/server/vps#tarife) `€1`
+- [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets/) `€5`
+- [Linode](https://www.linode.com/products/shared/) `€5`
+
+## Prices
+All prices as of April 2021. Usually, the price correlates with performance and the quality of the support.
 
 ## Glossary
 - **(Web-)Hosting** often means an AMP-instance where you can run code (e.g. PHP) or databases and serve files (read more above)
@@ -94,5 +97,6 @@ When you need full control and are willing to start with the bare operating syst
 - **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a user-interface (e.g. Plesk) to configure the server behaviour
 - **Shared, virtual, vServer, VPS** means that you share the physical machine with other customers, which is the most common practice and also consumes less electricity
 - **Dedicated** is the opposite of shared, meaning that you alone execute on one physical machine
+- **Availability** % of time, the service/machine is accessable from the internet. 99.9% uptime means 45min downtime per month
 - **AMP Stack** Apache + MySQL + PHP is the classic website software stack, required for Kirby or Wordpress-websites
 - **JAM Stack** JavaScript + API Data + Markup (HTML) is the upcoming software stack, that runs a JS-Framework (Vue, React, Svelte or Angular) both on the server (Node.js) and client side, consumes it’s content from some API and generates HTML from it
