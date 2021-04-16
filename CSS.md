@@ -61,12 +61,24 @@ Most common CSS units are:
 - `vh` % of screen height (see ["100vh-problem"](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/))
 - `em` relative to current font size (`2em` means `200%` of the current or inherited font-size)
 - `rem` [relative to root font size](https://www.w3schools.com/cssref/css_pxtoemconversion.asp) (when `html{font-size:10px;}`, then `1rem` = `10px`)
-- `color` as `#hex`, `rgb()` or `rgba()`
 
 Units can also be calculated by the browser, eg: `width: calc( 50vw + 1px );`
 
 Learn more:
 - [Full list of CSS Units](https://www.w3schools.com/cssref/css_units.asp)
+
+### Colors
+You can define colors in a few different ways, eg:
+- `blue` there are 140 default colors with names like `azure`, `mintcream` and `springgreen`
+- `#00f` 4-bit hex (`0` = `0`, `9` = `127`, `f` = `255`)
+- `#0000ff` 8-bit hex (`00` = `0`, `99` = `127`, `ff` = `255`)
+- `rgb(0,0,255)`
+- `rgba(0,0,255, 0.5)` with opacity between `0` and `1`
+- `hsl(240, 100%, 50%)`
+- `currentColor` current or inherited text color
+
+Read more:
+- [w3schools](https://www.w3schools.com/colors/default.asp)
 - [List of all CSS default colors](https://www.w3schools.com/cssref/css_colors.asp)
 
 ### Bringing CSS into HTML
