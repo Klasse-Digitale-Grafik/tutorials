@@ -3,7 +3,7 @@
 CSS is a method to assign styles to HTML elements. This allows you to seperate the appeareance from the actual content.
 More on [Wikipedia](https://en.wikipedia.org/wiki/CSS)
 
-## 🛷 Basic syntax
+## 🛷 Basics
 
 ```css
 selector {
@@ -17,13 +17,14 @@ The most important selectors are:
 - `*` select all
 - `tagname` select elements by tag name
 - `.class` select elements by class name
-- `#id` select element*s* by id
-- `:pseudoclass` select elements that are in a special state like `:hover`, or a pseudo child like `:before`
+- `#id` select element**s** by id
+- `:pseudo` select elements that are in a special state like `:hover`, or pseudo children like `:before`
 - `[attr]` select elements that have a given attribute
 - `parent descendant` select elements inside some other elements
 - `parent > child` select elements that are direct children of given parent elements
 - `element1 ~ element2` select elements that eventually follow some other elements
 - `element1 + element2` select elements that directly follow some other elements
+- `element1, element2` combine multiple selectors
 
 Learn more:
 - [Full list of CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)
@@ -46,15 +47,21 @@ h1 {
 ```
 [Full list of CSS Rules](https://www.w3schools.com/cssref/default.asp)
 
+### Cascading and inheritance
+One of CSS’ key characteristics is the power of inheritance, which means:
+1. A selector always selects all matching elements.
+2. All rules applied to an element will populate down to all it’s children ("cascading"), as long as they’re not overwritten.
+3. With the `inherit` value, child elements can explicitly inherit a rule from its ancestors.
+
 ### Units
 Most common CSS units are:
 - `px` pixels in non-retina terms (1x1 CSS px = 2x2 retina pixels)
-- `%` relative to the width of the parent element
+- `%` relative to the **width** of the parent element
 - `vw` % of screen width
-- `vh` % of screen height, see ["100vh-roblem"](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/)
-- `em` relative to current font size (`2em` means `200%` of the current or parent elements font-size)
+- `vh` % of screen height (see ["100vh-problem"](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/))
+- `em` relative to current font size (`2em` means `200%` of the current or inherited font-size)
 - `rem` [relative to root font size](https://www.w3schools.com/cssref/css_pxtoemconversion.asp) (when `html{font-size:10px;}`, then `1rem` = `10px`)
-- `color` as #hex, rgb() or rgba()
+- `color` as `#hex`, `rgb()` or `rgba()`
 
 Units can also be calculated by the browser, eg: `width: calc( 50vw + 1px );`
 
@@ -65,12 +72,12 @@ Learn more:
 ### Bringing CSS into HTML
 Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3schools.com/css/css_howto.asp):
 
-**Inline using `style` attribute** (use only for small exceptions of the rule)
+**Inline**, using `style` attribute (use only for small exceptions of the rule)
 ```html
 <h1 style="color: red;">Headline</div>
 ```
 
-**Within the HTML `head`** (use for small stylesheets)
+**Within HTML `head`** (use for small stylesheets)
 ```html
 <head>
     <style>
@@ -78,16 +85,10 @@ Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3
     </style>
 ```
 
-**Inside a seperate `.css` file, referenced from within the HTML `head`** (use for normal websites)
-```
+**Seperate `.css` file**, referenced from within the HTML `head` (normal usecase)
+```html
 <link rel="stylesheet" href="styles.css">
 ```
-
-### Cascading and inheritance
-One of CSS’ key characteristics is the power of inheritance, which means:
-1. A selector always selects all matching elements.
-2. All rules applied to an element will populate down to all it’s children ("cascading"), as long as they’re not overwritten.
-3. With the `inherit` value, child elements can explicitly inherit a rule from its ancestors.
 
 ## 🧮 Layout
 
@@ -110,18 +111,15 @@ Learn more:
 - [w3scools CSS Layout](https://www.w3schools.com/css/css_website_layout.asp)
 - [Learn CSS Box Alignment with Ahmad Shadeed](https://ishadeed.com/article/learn-box-alignment/) game
 
-## 📱 Responsive design
-
+## 📱 Responsive design and media queries
+Using media queries, you can control that certain CSS code gets only applied, when the user device matches a specific rule. This is helpful to adjust a website design for small or large screens or when it’s being printed.
 - [Media queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
 - [Hyphenation]((https://medium.com/clear-left-thinking/all-you-need-to-know-about-hyphenation-in-css-2baee2d89179)) and [word breaks](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
 
 **Mobile first paradigm**
 means that you first define all the rules required for the layout on a mobile device and later add or override the design for larger screens using media queries or a seconds css file. This makes sense because usually devices with larger screens have more compute power and faster internet than smaller devices.
 ```css
-.grid {
-    padding: 0.5rem;
-}
-.grid .item {
+.grid, .grid .item {
     padding: 0.5rem;
 }
 @media (min-width: 600px){
@@ -140,11 +138,19 @@ means that you first define all the rules required for the layout on a mobile de
 }
 ```
 
-## CSS Variables
+You can also add seperate stylesheets that only will be loaded, once the media query matches:
+```html
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="screen.css" media="screen">
+<link rel="stylesheet" href="scree-large.css" media="screen and (min-width: 900px)">
+<link rel="stylesheet" href="print.css" media="print">
+```
+
+## 🎨 CSS Variables
 With CSS variables you can make your design more modular and changable, even on the client-side:
 ```css
 ::root {
-    /* var */
+    /* define */
     --signature-color: #00f;
 }
 button, a, h1 {
@@ -155,7 +161,7 @@ button, a, h1 {
 
 Learn more:
 - [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
-- [Difference of CSS-Vars and SASS-Vars on CSS-Tricks](https://css-tricks.com/difference-between-types-of-css-variables/)
+- [Difference of CSS-Vars and Preprocessor-Vars on CSS-Tricks](https://css-tricks.com/difference-between-types-of-css-variables/)
 
 ## 🎆 Effects
 
@@ -189,9 +195,20 @@ Not all rules and features are supported by all browsers. Some rules are even in
 - [CanIUse Archive of browser support](https://caniuse.com)
 - [Supported rules](https://www.w3schools.com/cssref/css3_browsersupport.asp)
 
+Sometimes browsers (especially older versions) ignore a rule and only apply it when you add a ["vendor-prefix"](https://bitsofco.de/css-vendor-prefixes/):
+```
+element {
+    -webkit-animation-name: slidein;
+    -moz-animation-name: slidein;
+    -ms-animation-name: slidein;
+    -o-animation-name: slidein;
+    animation-name: slidein;
+}
+```
+
 All browsers come with a default stylesheet, that provides fallback styles for many HTML elements. These fallback rules can even be edited by the user, so it often makes sense to "reset" or "normalize" them:
 - [List of browser default values](https://www.w3schools.com/cssref/css_default_values.asp)
-- [Reboot, Resets, Rereasoning by Chris Coyer](https://css-tricks.com/reboot-resets-reasoning/)
+- [Reboot, Resets, Rereasoning](https://css-tricks.com/reboot-resets-reasoning/) by Chris Coyer
 - [Eric Meyer CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 - [normalize.css](http://necolas.github.io/normalize.css/)
 
@@ -212,7 +229,7 @@ which resets (almost) all default css rules, but retains `display`.
 
 ## 🛠 Tooling and Preprocessors
 There are several tools, that can help you to make your CSS work easier. Preprocessors allow you to write your css in a more readable and reusable way and then compile it to real css that browsers can handle. Common examples are:
-- [Sass/SCSS](https://sass-lang.com)
+- [Sass/Scss](https://sass-lang.com)
 - [PostCSS](https://postcss.org)
 
 ## 🧩 Frameworks
@@ -228,6 +245,6 @@ When you don’t want to handle every edge case yourself, a CSS framework could 
 - [MDN Mozilla Docs](https://developer.mozilla.org/de/docs/Web/CSS)
 - [CSS-Tricks Almanac](https://css-tricks.com/almanac/)
 - [w3scools](https://www.w3schools.com/css/default.aspcodepen)
-- [Can I Use](https://caniuse.com)
+- [CanIUse](https://caniuse.com) for checking browser support
 - [Codepen](https://codepen.io/pen/) for quick experiments
 - [State fo CSS](https://stateofcss.com) annual census
