@@ -1,6 +1,6 @@
-# CSS Cascading Style sheets
+# CSS Cascading Style Sheets
 
-CSS is a method to assign styles to HTML elements. This allows you to seperate the appeareance from the actual content.
+CSS is a method to assign styles to structured content like HTML. This allows you to seperate the appeareance from the actual content.
 More on [Wikipedia](https://en.wikipedia.org/wiki/CSS)
 
 ## 🛷 Basics
@@ -113,27 +113,28 @@ Learn more:
 
 ## 📱 Responsive design and media queries
 Using media queries, you can control that certain CSS code gets only applied, when the user device matches a specific rule. This is helpful to adjust a website design for small or large screens or when it’s being printed.
-- [Media queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
-- [Hyphenation]((https://medium.com/clear-left-thinking/all-you-need-to-know-about-hyphenation-in-css-2baee2d89179)) and [word breaks](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
 
-**Mobile first paradigm**
-means that you first define all the rules required for the layout on a mobile device and later add or override the design for larger screens using media queries or a seconds css file. This makes sense because usually devices with larger screens have more compute power and faster internet than smaller devices.
 ```css
-.grid, .grid .item {
-    padding: 0.5rem;
+/* on small screens show items as list */
+.grid .item {
+    margin: 1rem;
+    background-color: grey;
 }
 @media (min-width: 600px){
+    /* on medium sized screens, show 2 column grid */
     .grid {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
     }
     .grid .item {
-        flex: 1 1 50%;
+        margin: 0;
     }
 }
 @media (min-width: 900px){
-    .grid .item {
-        flex-basis: 25%;
+    /* on large screens, show 4 column grid */
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 ```
@@ -145,6 +146,12 @@ You can also add seperate stylesheets that only will be loaded, once the media q
 <link rel="stylesheet" href="scree-large.css" media="screen and (min-width: 900px)">
 <link rel="stylesheet" href="print.css" media="print">
 ```
+
+- [Media queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
+- [Hyphenation]((https://medium.com/clear-left-thinking/all-you-need-to-know-about-hyphenation-in-css-2baee2d89179)) and [word breaks](https://justmarkup.com/articles/2015-07-31-dealing-with-long-words-in-css/)
+
+**Mobile first paradigm**
+means that you first define all the rules required for the layout on a mobile device and later add or override the design for larger screens using media queries or a seconds css file. This makes sense because usually devices with larger screens have more compute power and faster internet than smaller devices.
 
 ## 🎨 CSS Variables
 With CSS variables you can make your design more modular and changable, even on the client-side:
@@ -196,7 +203,7 @@ Not all rules and features are supported by all browsers. Some rules are even in
 - [Supported rules](https://www.w3schools.com/cssref/css3_browsersupport.asp)
 
 Sometimes browsers (especially older versions) ignore a rule and only apply it when you add a ["vendor-prefix"](https://bitsofco.de/css-vendor-prefixes/):
-```
+```css
 element {
     -webkit-animation-name: slidein;
     -moz-animation-name: slidein;
@@ -205,8 +212,9 @@ element {
     animation-name: slidein;
 }
 ```
+In 2021, this is less of a problem compared to a few years ago. But to support older browsers, it can still be helpful. There are also tools like [Autoprefixer](https://autoprefixer.github.io) that can do it for you.
 
-All browsers come with a default stylesheet, that provides fallback styles for many HTML elements. These fallback rules can even be edited by the user, so it often makes sense to "reset" or "normalize" them:
+All browsers come with a default stylesheet, which provides fallback styles for many HTML elements. As these fallback rules are different accross browsers and even can be edited by the user, it often makes sense to "reset" or "normalize" them before you add your own rules:
 - [List of browser default values](https://www.w3schools.com/cssref/css_default_values.asp)
 - [Reboot, Resets, Rereasoning](https://css-tricks.com/reboot-resets-reasoning/) by Chris Coyer
 - [Eric Meyer CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
@@ -225,7 +233,7 @@ The most basic CSS reset would be
     vertical-align: baseline;
 }
 ```
-which resets (almost) all default css rules, but retains `display`.
+which you can add on to of all your css to resets (almost) all default rules that could mess up cour design.
 
 ## 🛠 Tooling and Preprocessors
 There are several tools, that can help you to make your CSS work easier. Preprocessors allow you to write your css in a more readable and reusable way and then compile it to real css that browsers can handle. Common examples are:
