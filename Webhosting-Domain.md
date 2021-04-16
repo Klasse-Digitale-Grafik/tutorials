@@ -2,7 +2,7 @@
 
 A **website** and a **domain** are two different things: The **website is a collection** of files that can be rendered by your browser. These files are stored on some **server**, a computer that is always connected to the internet and which can be accessed by "calling" it’s **IP address**. And then there is a domain, which redirects your request to that servers IP address. Because on one server with one IP address, there can be multiple websites, the domain is also used by the server to determine which directory of files should be delivered.
 
-## The easy way
+## 🌍 The easy way
 The easiest is to have domain, email and webhosting with one provider. Many providers call this product "webhosting", and often there is almost nothing that can go wrong:
 - Buy a webhosting package and select an available domain
 - Create an FTP user and upload your website to the webspace
@@ -27,7 +27,7 @@ Depending on your needs:
 - SSH
 
 ### Providers
-Some providers that offer as-easy-as-possible webhosting (sorted by cost of the most affordable option):
+Some providers that offer as-easy-as-possible webhosting:
 - [Netcup](https://www.netcup.de/hosting/)
 `€2` 1 domain, ∞SSL, 50GB SSD
 - [Hetzner](https://www.hetzner.com/de/webhosting)
@@ -88,10 +88,10 @@ When you need full control and are willing to start with the bare operating syst
 - [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets/) `€5`
 - [Linode](https://www.linode.com/products/shared/) `€5`
 
-## Prices
-All prices as of April 2021. Usually, the price correlates with performance and the quality of the support.
+## 💸 Prices
+All prices as of April 2021. Usually, the price correlates with performance and the quality of the support. Products sorted by the cost of the most affordable option.
 
-## Glossary
+## 📒 Glossary
 - **(Web-)Hosting** often means an AMP-instance where you can run code (e.g. PHP) or databases and serve files (read more above)
 - **Server** often means a (virtual) computer, that you can configure to your own needs
 - **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a user-interface (e.g. Plesk) to configure the server behaviour
