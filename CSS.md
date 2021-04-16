@@ -103,19 +103,23 @@ Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3
 
 ## 🧮 Layout
 
-**Position**
+**The Box Model concept**
+- [Box model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [Box sizing](https://developer.mozilla.org/de/docs/Web/CSS/box-sizing)
+
+**`position:`**
 - [CSS-Tricks](https://css-tricks.com/almanac/properties/p/position/)
 - [Learn CSS Positioning](https://ishadeed.com/article/learn-css-positioning/) by Ahmad Shadeed
 
-**Flex**
+**`display: flex`**
 - [CSS-Tricks Complete guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Flexbox froggy](https://flexboxfroggy.com) game
 
-**Grid**
+**`display: grid`**
 - [CSS-Tricks complete guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Grid Garden](https://cssgridgarden.com) game
 
-**Tables**
+**`<table>`**
 - [CSS-Tricks complete guide](https://css-tricks.com/complete-guide-table-element/)
 
 Learn more:
@@ -250,6 +254,8 @@ The most basic CSS reset would be
     color: inherit;
     background-color: none;
     vertical-align: baseline;
+    /* depending on your taste: */
+    box-sizing: border-box;
 }
 ```
 which you can add on top of all your css to reset (almost) all default rules that could mess up your design.
