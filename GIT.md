@@ -1,4 +1,4 @@
-# Git and GitHub
+# Git version control and GitHub
 
 **Git** is a version control system for text and code projects (`repositories` or `repo`). For every completed milestone or task you can make a `commit`. You can also make `branches` to create different versions or states of your work. The main state of your project can be either locally on your computer or on your own server or on some platform like GutHub, BitBucket or GitLab. A really important feature is, that the whole editing history will be kept.
 

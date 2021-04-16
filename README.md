@@ -6,7 +6,7 @@ Growing collection of hopefully helpful tutorials.
 - [Command Line](CommandLine.md)
 - CMS Content Management Systems*
 - [FTP/SFTP File Transfer](FTP.md)
-- [GIT & GitHub](GIT.md)
+- [GIT Version control & GitHub](GIT.md)
 - HTML*
 - IDE (Code-Editor)*
 - Java Script*

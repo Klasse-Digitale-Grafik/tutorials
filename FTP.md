@@ -20,6 +20,7 @@ Is’s possible via command line, but a client software will make it much easier
 
 - [Cyberduck](https://cyberduck.io). Free, Mac, Windows
 - [FileZilla](https://filezilla-project.org). Free, Mac, Windows
+- [Transmit](https://panic.com/transmit/). $45, Mac
 
 ## 🦆 Connecting with Cyberduck
 
