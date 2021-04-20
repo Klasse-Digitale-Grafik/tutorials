@@ -34,6 +34,8 @@ Some providers that offer as-easy-as-possible webhosting:
 `€2` 1 domain, ∞SSL, 10GB SSD
 - [Velogrid](https://www.velogrid.com/)
 `€3` 1 domain + 1GB / 0 domains + 10GB, ∞SSL
+- [Contabo](https://contabo.com/de/web-hosting/)
+`€3` 1 domain, 50GB, SSL
 - [HostEurope](https://www.hosteurope.de/webhosting-loesungen/)
 `€3,50` 100GB
 - [Strato](https://www.strato.de/hosting/)
@@ -85,6 +87,8 @@ When you only need to deliver files as they are (no execution or compute)
 ### Linux server
 When you need full control and are willing to start with the bare operating system
 - [Ionos](https://www.ionos.de/server/vps#tarife) `€1`
+- [Netcup](https://www.netcup.de/vserver/vps.php) `3€`
+- [Contabo](https://contabo.com/de/vps/) `€5`
 - [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets/) `€5`
 - [Linode](https://www.linode.com/products/shared/) `€5`
 
@@ -96,6 +100,7 @@ All prices as of April 2021. Products sorted by the cost of the most affordable 
 - **Server** often means a (virtual) computer, that you can configure to your own needs. Of course you can also install a AMP environment to serve your website. But in some cases you will have install all the software yourself.
 - **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a user-interface (e.g. Plesk) to configure the server behaviour and install software
 - **Shared, virtual, vServer, VPS** means that you share the physical machine with other customers, which is the most common practice and also consumes less electricity
+- **SSD** Solid State Drives are about 2x faster than conventional HDD and consume less energy
 - **Dedicated** is the opposite of shared, meaning that you alone execute on one physical machine
 - **Availability** % of time, the service/machine is accessable from the internet. 99.9% uptime means 45min downtime per month
 - **AMP Stack** Apache + MySQL + PHP is the classic website software stack, required for Kirby or Wordpress-websites
