@@ -106,6 +106,7 @@ Basically, there are 3 standard ways to [attach CSS to your HTML](https://www.w3
 **The Box Model**
 When working with properties like `width`, `height`, `margin`, `border` and `padding` it is really helpful to understand the box model concept:
 - [The box model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [Opening the box model](https://learn.shayhowe.com/html-css/opening-the-box-model/) by Shay Howe
 - [Box sizing](https://developer.mozilla.org/de/docs/Web/CSS/box-sizing) to control the box model
 - [Collapsing margins](https://www.joshwcomeau.com/css/rules-of-margin-collapse/)
 
@@ -221,6 +222,10 @@ And of course
 ```
 More on [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
+Here are some free webfonts:
+- [Google Fonts](https://font.google.com)
+- [Open Source Webfonts](https://www.are.na/laurel-schwulst/open-source-web-fonts) curated by Laurel Schwulst
+
 ## 🚨 Browser support and default values
 Not all rules and features are supported by all browsers. Some rules are even interpreted differently across browsers. Especially for new or fancy features, you should check for browser support:
 
@@ -284,3 +289,5 @@ When you don’t want to handle every edge case yourself, a CSS framework can he
 - [Codepen](https://codepen.io/pen/) for quick experiments
 - [State fo CSS](https://stateofcss.com) annual census
 - [Tutorials by Josh Comeau](https://www.joshwcomeau.com/tutorials/css/)
+- [Shapes of CSS](https://css-tricks.com/the-shapes-of-css/)
+- [Getting to know CSS](https://learn.shayhowe.com/html-css/getting-to-know-css/) by Shay Howe
