@@ -96,7 +96,7 @@ When you need full control and are willing to start with the bare operating syst
 All prices as of April 2021. Products sorted by the cost of the most affordable option. Usually, the price correlates with performance and the quality of the support.
 
 ## 📒 Glossary
-- 🌱 100% green energy, (🌱) 100% energy neutral through compensation
+- 🌱 100% green energy, (🌱) 100% carbon neutral through compensation
 - **(Web-)Hosting** often means an AMP-instance where you can run code (e.g. PHP) or databases and serve files (read more above)
 - **Server** often means a (virtual) computer, that you can configure to your own needs. Of course you can also install a AMP environment to serve your website. But in some cases you will have install all the software yourself.
 - **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a user-interface (e.g. Plesk) to configure the server behaviour and install software
