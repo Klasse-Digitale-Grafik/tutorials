@@ -2,7 +2,7 @@
 
 A **website** and a **domain** are two different things: The **website is a collection** of files that can be rendered by your browser. These files are stored on some **server**, a computer that is always connected to the internet and which can be accessed by "calling" it’s **IP address**. And then there is a domain, which redirects your request to that servers IP address. Because on one server with one IP address, there can be multiple websites, the domain is also used by the server to determine which directory of files should be delivered.
 
-## 🌱 The easy way
+## 🛷 The easy way
 The easiest is to have domain, email and webhosting with one provider. Many providers call this product "webhosting", and often there is almost nothing that can go wrong:
 - Buy a webhosting package and select an available domain
 - Create an FTP user and upload your website to the webspace
@@ -20,6 +20,7 @@ These are the specs that you should look for:
 - SFTP
 - PHP >= 7.4
 - Serverlocation (Germany/Europe)
+- 🌱 100% green energy
 
 Depending on your needs:
 - Database
@@ -29,9 +30,9 @@ Depending on your needs:
 ### Providers
 Some providers that offer as-easy-as-possible webhosting:
 - [Netcup](https://www.netcup.de/hosting/)
-`€2` 1 domain, ∞SSL, 50GB SSD
+`€2` 1 domain, ∞SSL, 50GB SSD, 🌱
 - [Hetzner](https://www.hetzner.com/de/webhosting)
-`€2` 1 domain, ∞SSL, 10GB SSD
+`€2` 1 domain, ∞SSL, 10GB SSD 🌱
 - [Velogrid](https://www.velogrid.com/)
 `€3` 1 domain + 1GB / 0 domains + 10GB, ∞SSL
 - [Contabo](https://contabo.com/de/web-hosting/)
@@ -39,19 +40,19 @@ Some providers that offer as-easy-as-possible webhosting:
 - [HostEurope](https://www.hosteurope.de/webhosting-loesungen/)
 `€3,50` 100GB
 - [Strato](https://www.strato.de/hosting/)
-`€4` 3 domains, 1 SSL, 50GB
+`€4` 3 domains, 1 SSL, 50GB 🌱
 - [Dogado](https://www.dogado.de/website/hosting)
-`€4` 3 domains, 75GB SSD
+`€4` 3 domains, 75GB SSD 🌱
 - [Ionos](https://www.ionos.de/hosting/webhosting)
-`€4` 1 domain, 1 SSL, 50GB
+`€4` 1 domain, 1 SSL, 50GB, 🌱
 - [One](https://www.one.com/de/#PlansAndPrices)
 `€4` 1 SSL, 50GB SSD
 - [DomainFactory](https://www.df.eu/de/webhosting/)
 `€5` 1 SSL, 25 GB
 - [Webgo](https://www.webgo.de/ssd-webhosting/)
-`8€` 3 domains, ∞SSL, 25GB SSD
+`8€` 3 domains, ∞SSL, 25GB SSD 🌱
 
-## 🌳 More complex ways
+##  More complex ways
 
 There are various reasons, why you may end up with a more complicated setup, e.g.:
 - You need more compute power, e.g. to handle many requests, a large database, many files, ...
@@ -64,7 +65,7 @@ There are various reasons, why you may end up with a more complicated setup, e.g
 
 ### Hosting only providers
 You will have to connect an external domain
-- [Ueberspace](https://uberspace.de)
+- [Ueberspace](https://uberspace.de) 🌱
 
 ### Domain only providers
 You will have to connect to an external target host
@@ -76,7 +77,7 @@ When working with static site generators like Hugo, 11ty, Gatsby or JS-Framework
 - [Begin](https://begin.com) `free`
 - [Vercel](https://vercel.com) `free`
 - [Netlify](https://www.netlify.com) `free` personal account
-- [Ionos Deploy Now](https://www.ionos.de/hosting/deploy-now) `free` public beta
+- [Ionos Deploy Now](https://www.ionos.de/hosting/deploy-now) `free` public beta 🌱
 
 ### Static file hosting
 When you only need to deliver files as they are (no execution or compute)
@@ -86,8 +87,8 @@ When you only need to deliver files as they are (no execution or compute)
 
 ### Linux server
 When you need full control and are willing to start with the bare operating system
-- [Ionos](https://www.ionos.de/server/vps#tarife) `€1`
-- [Netcup](https://www.netcup.de/vserver/vps.php) `3€`
+- [Ionos](https://www.ionos.de/server/vps#tarife) `€1` 🌱
+- [Netcup](https://www.netcup.de/vserver/vps.php) `3€` 🌱
 - [Contabo](https://contabo.com/de/vps/) `€5`
 - [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets/) `€5`
 - [Linode](https://www.linode.com/products/shared/) `€5`
@@ -96,6 +97,7 @@ When you need full control and are willing to start with the bare operating syst
 All prices as of April 2021. Products sorted by the cost of the most affordable option. Usually, the price correlates with performance and the quality of the support.
 
 ## 📒 Glossary
+- 🌱 100% green energy
 - **(Web-)Hosting** often means an AMP-instance where you can run code (e.g. PHP) or databases and serve files (read more above)
 - **Server** often means a (virtual) computer, that you can configure to your own needs. Of course you can also install a AMP environment to serve your website. But in some cases you will have install all the software yourself.
 - **Managed** means that you don’t have to configure the server software yourself via the command line, but the provider offers you a user-interface (e.g. Plesk) to configure the server behaviour and install software
