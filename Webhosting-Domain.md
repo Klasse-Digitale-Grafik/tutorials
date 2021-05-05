@@ -78,6 +78,7 @@ When working with static site generators like Hugo, 11ty, Gatsby or JS-Framework
 - [Vercel](https://vercel.com) `free`
 - [Netlify](https://www.netlify.com) `free` personal account
 - [Ionos Deploy Now](https://www.ionos.de/hosting/deploy-now) `free` public beta 🌱
+- [Cloudflare](https://pages.cloudflare.com) `free`
 
 ### Static file hosting
 When you only need to deliver files as they are (no execution or compute)
@@ -92,6 +93,10 @@ When you need full control and are willing to start with the bare operating syst
 - [Contabo](https://contabo.com/de/vps/) `€5`
 - [DigitalOcean Droplet](https://www.digitalocean.com/products/droplets/) `€5`
 - [Linode](https://www.linode.com/products/shared/) `€5`
+
+### Others
+- [Google Firebase](https://firebase.google.com/products/hosting/)
+- [AWS](https://aws.amazon.com/de/free/webapps/)
 
 ## 💸 Prices
 All prices as of April 2021. Products sorted by the cost of the most affordable option. Usually, the price correlates with performance and the quality of the support.
