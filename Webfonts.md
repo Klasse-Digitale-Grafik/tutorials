@@ -31,22 +31,22 @@ html {
 ## Finding webfonts
 
 ### Websafe fonts
-There is a group of typefaces that are most likely installed on every computer that uses a latin alphabet. These fonts are called websafe, because you can use them without worrying that the browser replaces it with another typeface. These include
+There is a group of typefaces that are most likely installed on every computer that uses a latin alphabet. These fonts are called web safe, because you can use them without worrying that the browser replaces it with another typeface. These include:
 - Arial
 - Times New Roman
 - Courier New
 - [and more](https://www.w3schools.com/cssref/css_websafe_fonts.asp)
 
-### Webfonts services
+### Webfont services
 There are also services that let you directly embed fonts into your websites
 
 - [Google Fonts](https://font.google.com)
 - [Adobe Fonts](https://fonts.adobe.com)
 
-### Custom webfont
+### Custom webfonts
 Of course you can also provide custom font files. The modern way would be to have it in `woff2` or `woff` format, but `otf` and `ttf` often works as well.
 
-All modern type foundaries will offer their typefaces in these formats. You can also export webfonts from typedesign software like glyphs or Robofont. And then you can convert your regular desktop fonts to webfonts with tools like [Transfonter](https://transfonter.org).
+All modern type foundaries will offer their typefaces in these formats. You can also export webfonts from typedesign software like Glyphs or Robofont. And then you can convert your regular desktop fonts to webfonts with tools like [Transfonter](https://transfonter.org).
 
 - [Open Source Webfonts](https://www.are.na/laurel-schwulst/open-source-web-fonts) curated by Laurel Schwulst
 
@@ -70,7 +70,7 @@ p + p {
 }
 ```
 
-> Use `rem` for values that you want to make relative to the root font size. Use `em` for values relative to it’s own font-size.
+> Use `rem` for values that you want to make relative to the root font size. Use `em` for values relative to the current font-size.
 
 - [All CSS font rules](https://css-tricks.com/almanac/properties/f/font/)
 - [type.js](http://typejs.org/)
@@ -100,5 +100,6 @@ p {
 
 ## Further reading
 
-- [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/)
-- [Grilli Type on webfonts](https://github.com/grillitype/web-fonts-guide)
+- [More on CSS](CSS.md)
+- [Using @font-face](https://css-tricks.com/snippets/css/using-font-face/) by CSS-Tricks
+- [Using webfonts](https://github.com/grillitype/web-fonts-guide) by Grilli Type
