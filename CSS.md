@@ -220,11 +220,7 @@ And of course
         url('/path/to/webfont.woff') format('woff');
 }
 ```
-More on [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/)
-
-Here are some free webfonts:
-- [Google Fonts](https://font.google.com)
-- [Open Source Webfonts](https://www.are.na/laurel-schwulst/open-source-web-fonts) curated by Laurel Schwulst
+- [More on Webfonts](Webfonts.md)
 
 ## 🚨 Browser support and default values
 Not all rules and features are supported by all browsers. Some rules are even interpreted differently across browsers. Especially for new or fancy features, you should check for browser support:
