@@ -103,3 +103,4 @@ p {
 - [More on CSS](CSS.md)
 - [Using @font-face](https://css-tricks.com/snippets/css/using-font-face/) by CSS-Tricks
 - [Using webfonts](https://github.com/grillitype/web-fonts-guide) by Grilli Type
+- [Leading Trim](https://medium.com/microsoft-design/leading-trim-the-future-of-digital-typesetting-d082d84b202) by Microsoft

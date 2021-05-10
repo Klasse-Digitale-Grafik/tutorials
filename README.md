@@ -16,7 +16,7 @@ Growing collection of hopefully helpful tutorials.
 - Programming basics*
 - Sass/Scss*
 - [SSH Secure Shell](SSH.md)
-- [Webfonts](Webfonts.md)
+- [Website-Typography](Website-Typography.md)
 - [Webhosting & Domain](Webhosting-Domain.md)
 - Website development*
 
