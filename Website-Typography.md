@@ -71,6 +71,17 @@ p {
 p + p {
     text-indent: 3em;
 }
+p a {
+    text-decoration: underline;
+}
+sup, figcaption {
+    font-size: 0.7em;
+}
+sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.3em;
+}
 ```
 
 > Use `rem` for values that you want to make relative to the root font size. Use `em` for values relative to the current font-size.
@@ -145,5 +156,6 @@ You can easily assume that `1pt` in InDesign ≈ `1px` in browser.
 - [Using @font-face](https://css-tricks.com/snippets/css/using-font-face/) by CSS-Tricks
 - [Using webfonts](https://github.com/grillitype/web-fonts-guide) by Grilli Type
 - [Leading Trim](https://medium.com/microsoft-design/leading-trim-the-future-of-digital-typesetting-d082d84b202) by Microsoft
+- [CodePen Sample Article](https://codepen.io/codepenchristoph/pen/vYxBOao?editors=1100) by Knoth & Renner
 - Webfont lettering with [lettering.js](http://letteringjs.com)
 - Splitting text into single `span`s with [Splitting.js](https://splitting.js.org)
