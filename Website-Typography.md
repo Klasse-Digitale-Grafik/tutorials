@@ -55,6 +55,7 @@ html {
     font-size: 16px;
     /* relative font size with min, max value */
     font-size: clamp(14px, 2vw, 24px);
+    letter-spacing: -0.05em;
     /* optimize text-redering for exact shapes */
     text-rendering: geometricPrecision;
     /* optimize text-redering for legibility */
@@ -63,10 +64,14 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+h1, h2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 1rem 0;
+}
 p {
     font-size: 1rem;
     line-height: 1.2;
-    letter-spacing: -0.05em;
 }
 p + p {
     text-indent: 3em;
@@ -76,6 +81,7 @@ p a {
 }
 sup, figcaption {
     font-size: 0.7em;
+    letter-spacing: 0.05em;
 }
 sup {
     vertical-align: baseline;
