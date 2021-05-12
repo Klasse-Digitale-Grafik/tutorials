@@ -53,6 +53,8 @@ One of CSS’ key characteristics is the power of inheritance, which means:
 2. All rules applied to an element will populate down to all it’s children ("cascading"), as long as they’re not overwritten
 3. With the `inherit` value, child elements can explicitly inherit a rule from its ancestors
 
+This allows you to make even complex designs with a minimum amount of CSS rules, which makes your code more reusable, readable and your website faster.
+
 ### Units
 Most common CSS units are:
 - `px` pixels in non-retina terms (1x1 CSS px = 2x2 retina pixels)
