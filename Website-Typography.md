@@ -1,6 +1,6 @@
 # Webfonts
 
-## Embedding and ypplying a custom webfont in CSS
+## Embedding and applying a custom webfont in CSS
 
 ```css
 @font-face {
@@ -10,7 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 html {
     /* Custom font */
     font-family: 'MyWebFont';
@@ -56,6 +55,13 @@ html {
     font-size: 16px;
     /* relative font size with min, max value */
     font-size: clamp(14px, 2vw, 24px);
+    /* optimize text-redering for exact shapes */
+    text-rendering: geometricPrecision;
+    /* optimize text-redering for legibility */
+    text-rendering: optimizeLegibility;
+    /* normalize font anti-aliasing */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 p {
     font-size: 1rem;
@@ -70,10 +76,10 @@ p + p {
 > Use `rem` for values that you want to make relative to the root font size. Use `em` for values relative to the current font-size.
 
 - [All CSS font rules](https://css-tricks.com/almanac/properties/f/font/)
-- [type.js](http://typejs.org/)
-- [Kerning](https://css-tricks.com/almanac/properties/f/font-kerning/)
 - [Scale font-sizes with clamp()](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/)
+- [Kerning](https://css-tricks.com/almanac/properties/f/font-kerning/)
 - [OpenType features](https://developer.mozilla.org/de/docs/Web/CSS/font-feature-settings)
+- [type.js](http://typejs.org/)
 
 ### Hyphanation and word breaking
 
