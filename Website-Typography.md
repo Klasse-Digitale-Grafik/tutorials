@@ -1,4 +1,4 @@
-# Webfonts
+# Web Typography
 
 ## Embedding and applying a custom webfont in CSS
 
