@@ -129,6 +129,16 @@ p.format-name {
 
 You can easily assume that `1pt` in InDesign ≈ `1px` in browser.
 
+## Detail typography
+
+- English quatation marks `“ ‘ ’ ”`
+- German quatation marks ((Anführungszeichen)[https://de.wikipedia.org/wiki/Anführungszeichen]) `„ ‚ ‘ “`
+- French quatation marks ((Guillemets)[https://en.wikipedia.org/wiki/Guillemets]) `» › ‹ «`
+- en-dash `–`
+- em-dash `—`
+- Ellipsis `…`
+- Bar `|`
+
 ## Further reading
 
 - [More on CSS](CSS.md)
