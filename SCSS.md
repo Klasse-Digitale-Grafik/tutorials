@@ -1,8 +1,8 @@
 # SASS & SCSS
 
-SASS & SCSS is a pair of programming languages that make it easier to create and generate CSS. While SASS is a different way to notate stylesheets, SCSS keeps the regular CSS syntax.
+SASS & SCSS is a pair of programming languages that make it easier to create and **generate CSS**. While **SASS** is a different way to notate stylesheets, **SCSS** keeps the regular CSS syntax. **SASS** is the name of the software and **SCSS** is a syntax flavour of it to make it look more like regular CSS.
 
-Both are supersets of CSS, which means that any CSS works as well, but they can not be interpreted by any browser. So `.sass` and `.scss` files have to be compiled (or preprocessed) to CSS before publishing.
+Both are supersets of CSS, which means that any real CSS works as well inside SASS/SCSS. But they both can not be interpreted by any browser. So `.sass` and `.scss` files have to be compiled (or preprocessed) to CSS before publishing or uploading to the server.
 
 - [sass-lang.com](https://sass-lang.com)
 - [SASS on Wikipedia](https://de.wikipedia.org/wiki/Sass_(Stylesheet-Sprache))
@@ -29,8 +29,8 @@ Maybe you have some setup like
 ```bash
 index.html
 assets
-  css # rename to scss
-    styles.css # rename to styles.scss
+  css # -> rename to scss
+    styles.css # -> rename to styles.scss
 ```
 If you now run
 ```bash
@@ -166,7 +166,7 @@ $colors = (
 }
 ```
 
-2. Creating a grid system
+2. Creating a grid system, [Example on CodePen](https://codepen.io/moritzebeling/pen/eYvBRww?editors=1100)
 ```scss
 /* define breakbpoints */
 $breakpoints: (
@@ -207,4 +207,3 @@ $breakpoints: (
   <div class="col-6 col-s-4 col-m-3">6 columns on mobile, 4 on tablet, 3 on desktop</div>
 </div>
 ```
-[Example on CodePen](https://codepen.io/moritzebeling/pen/eYvBRww?editors=1100)
