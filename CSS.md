@@ -25,6 +25,7 @@ The most important selectors are:
 - `element1 + element2` select elements that directly follow some other elements
 - `element1 ~ element2` select elements that eventually follow some other elements
 - `element1, element2` combine multiple selectors
+- `element:lang(de)` select elements that have a `lang="de"` attribute
 
 Learn more:
 - [Full list of CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp)

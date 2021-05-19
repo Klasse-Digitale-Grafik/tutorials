@@ -97,7 +97,7 @@ sup {
 - [Kerning](https://css-tricks.com/almanac/properties/f/font-kerning/)
 - [type.js](http://typejs.org/)
 
-## Open type features
+### Open type features
 If a font provides open type features, you can also use them on your website:
 
 ```css
@@ -167,7 +167,7 @@ p.format-name {
 
 You can easily assume that `1pt` in InDesign ≈ `1px` in browser.
 
-## Detail typography
+### Detail typography
 
 - English [quatation marks](https://en.wikipedia.org/wiki/Quotation_mark) `“ ‘ ’ ”`
 - German quatation marks [Anführungszeichen](https://de.wikipedia.org/wiki/Anführungszeichen) `„ ‚ ‘ “`
@@ -176,6 +176,8 @@ You can easily assume that `1pt` in InDesign ≈ `1px` in browser.
 - em-dash `—`
 - Ellipsis `…`
 - Bar `|`
+
+Libraries like Smartypants ([PHP](https://github.com/michelf/php-smartypants), [Kirby](https://getkirby.com/docs/reference/system/options/smartypants)) can run over some text to fix "wrong" characters.
 
 ## Further reading
 

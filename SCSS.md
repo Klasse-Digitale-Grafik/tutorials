@@ -14,7 +14,7 @@ You can install SASS both as standalone software or as npm package.
 
 To have it running as standalone software, you will need [Homebrew](https://brew.sh) on Mac or [Chocolatey](https://chocolatey.org) on Windows.
 
-```
+```bash
 # mac
 brew install sass/sass/sass
 # windows
@@ -31,7 +31,7 @@ index.html
     styles.css # rename to styles.scss
 ```
 If you now run
-```
+```bash
 sass --watch assets/scss:assets/css
 ```
 all `.scss` files inside `assets/scss` will be processed to `.css` files inside `assets/css`, everytime you make a change and save that. That results in a structure like
