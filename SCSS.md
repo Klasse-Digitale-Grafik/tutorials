@@ -1,8 +1,8 @@
 # SASS & SCSS
 
-SASS & SCSS is a pair of programming languages that make it easier to create and **generate CSS**. While **SASS** is a different way to notate stylesheets, **SCSS** keeps the regular CSS syntax. **SASS** is the name of the software and **SCSS** is a syntax flavour of it to make it look more like regular CSS.
+**SASS** is a programming language that make it easier to create and **generate CSS** and complex design systems. While SASS also offeres a different way to notate stylesheets, **SCSS** is a syntax flavour inside of SCSS that feels more familiar to the regular CSS syntax. (In this document, the SCSS syntax is used.)
 
-Both are supersets of CSS, which means that any real CSS works as well inside SASS/SCSS. But they both can not be interpreted by any browser. So `.sass` and `.scss` files have to be compiled (or preprocessed) to CSS before publishing or uploading to the server.
+Both are supersets of CSS, which means that any real CSS works as well inside of SASS/SCSS files. But they both can not be interpreted by any browser. So any `.sass` and `.scss` files have to be compiled (or preprocessed) to CSS before publishing or uploading to the server.
 
 - [sass-lang.com](https://sass-lang.com)
 - [SASS on Wikipedia](https://de.wikipedia.org/wiki/Sass_(Stylesheet-Sprache))
