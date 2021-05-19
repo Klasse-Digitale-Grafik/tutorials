@@ -8,6 +8,7 @@ Growing collection of hopefully helpful tutorials.
 - [GIT Version control & GitHub](GIT.md)
 - [JSON Java Script Object Notation](JSON.md)
 - [Markdown](Markdown.md)
+- [IDE Code Editor](IDE.md)
 
 **Website development**
 - [CSS Cascading Style Sheets](CSS.md)
