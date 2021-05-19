@@ -6,6 +6,8 @@ Both are supersets of CSS, which means that any CSS works as well, but they can 
 
 - [sass-lang.com](https://sass-lang.com)
 - [SASS on Wikipedia](https://de.wikipedia.org/wiki/Sass_(Stylesheet-Sprache))
+- [SASS Basics](https://sass-lang.com/guide)
+- [SASS Documentation](https://sass-lang.com/documentation)
 
 ## Install
 
@@ -45,10 +47,7 @@ assets
 ```
 So now you can start working with SASS/SCSS inside your `assets/scss` folder. Make sure that in your HTML, you still reference the `assets/css/styles.css` file.
 
-## Some SASS example
-
-- [SASS Basics](https://sass-lang.com/guide)
-- [SASS Documentation](https://sass-lang.com/documentation)
+## SASS basics
 
 1. **Nested syntax** that better represents the nested structure of your HTML
 ```scss
@@ -129,4 +128,64 @@ $steps = ("s": 0.5rem, "m": 1rem, "l": 2rem);
     margin: $size;
   }
 }
+```
+
+## Examples
+
+1. Creating a color sheme
+```scss
+$black: #000;
+$white: #fff;
+$blue: #00f;
+$colors = (
+  "black": $black,
+  "white": $white,
+  "blue": $blue
+);
+@each $color, $value in $colors {
+  .#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}
+```
+
+2. Creating a grid system
+```scss
+$breakpoints = (
+  "s": 800px,
+  "m": 1200px,
+  "l": 1600px
+);
+@mixin grid( $columns ) {
+  display: grid;
+  grid-template-columns: repeat(#{$columns}, minmax(0, 1fr));
+  @include column( $columns );
+  @each $name, $width in $breakpoints {
+    @media (min-width: $width) {
+      @include column( $columns, '-#{name}' );
+    }
+  }
+}
+@mixin column( $i, $breakpoint: '' ) {
+  @if $i > 0 {
+    > .col#{$breakpoint}-#{$i} {
+      grid-column-end: span $i;
+    }
+    @include column( $i - 1, $breakpoint );
+  }
+}
+.grid {
+  @include grid( 12 );
+}
+```
+```html
+<div class="grid">
+  <div class="col-12">12 columns wide</div>
+  <div class="col-6 col-s-3">6 columns on mobile, 3 on tablet and desktop</div>
+  <div class="col-6 col-s-9">6 columns on mobile, 9 on tablet and desktop</div>
+  <div class="col-6 col-s-4 col-m-3">6 columns on mobile, 4 on tablet, 3 on desktop</div>
+</div>
 ```
