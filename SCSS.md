@@ -8,6 +8,7 @@ Both are supersets of CSS, which means that any real CSS works as well inside of
 - [SASS on Wikipedia](https://de.wikipedia.org/wiki/Sass_(Stylesheet-Sprache))
 - [SASS Basics](https://sass-lang.com/guide)
 - [SASS Documentation](https://sass-lang.com/documentation)
+- [More on CSS](CSS.md)
 
 ## Install
 
@@ -68,7 +69,7 @@ a {
 }
 ```
 
-2. **Variables** that can store property values
+2. **Variables** can store property values
 ```scss
 $color: #f00;
 h1 {
@@ -102,21 +103,23 @@ h1 {
 }
 ```
 
-4. **Modules** that let you split up code into seperate files
+4. **Modules** let you split up code into seperate files
 ```bash
 scss
   _variables-mixins.scss # module, indicated by leading underscore
   _typography.scss
-  style.scss # file
+  style.scss # file, only this gets compiled to a .css file
 ```
 ```scss
 /* _variables-mixins.scss */
 $color: red;
+
 /* _typography.scss */
 @import 'variables-mixins';
 h1 {
   color: $color;
 }
+
 /* style.scss */
 @import 'variables-mixins';
 @import 'typography';

@@ -14,7 +14,7 @@ Growing collection of hopefully helpful tutorials.
 - [Markdown](Markdown.md)
 - PHP*
 - Programming basics*
-- [SCSS](SCSS.md)
+- [SASS & SCSS](SCSS.md)
 - [SSH Secure Shell](SSH.md)
 - [Website-Typography](Website-Typography.md)
 - [Webhosting & Domain](Webhosting-Domain.md)

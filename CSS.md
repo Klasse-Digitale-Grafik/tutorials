@@ -268,10 +268,10 @@ which you can add on top of all your css to reset (almost) all default rules tha
 
 ## 🛠 Tooling and Preprocessors
 There are several tools, that can help you to make your CSS work easier. Preprocessors allow you to write your css in a more readable and reusable way and then compile it to real css that browsers can handle:
-- [SASS/SCSS](https://sass-lang.com)
+- [SASS & SCSS](https://sass-lang.com)
 - [PostCSS](https://postcss.org)
 
-[SCSS Tutorial](SCSS.md)
+[SASS & SCSS Tutorial](SCSS.md)
 
 ## 🧩 Frameworks
 When you don’t want to handle every edge case yourself, a CSS framework can help. This is especially helpful for grid systems, forms and user interfaces:
