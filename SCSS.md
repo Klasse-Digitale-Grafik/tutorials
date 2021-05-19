@@ -55,7 +55,7 @@ header {
   /* select all h1 inside header elements */
   h1 {
     font-size: 2rem;
-    /* with & you can connect to the parent rule, resulting in h1:before */
+    /* with & you can connect to the parent selector, resulting in h1:before */
     &:before {
       content: '–';
     }
@@ -169,7 +169,7 @@ $colors = (
 2. Creating a grid system
 ```scss
 /* define breakbpoints */
-$breakpoints = (
+$breakpoints: (
   "s": 800px,
   "m": 1200px,
   "l": 1600px
@@ -204,7 +204,7 @@ $breakpoints = (
 <div class="grid">
   <div class="col-12">12 columns wide</div>
   <div class="col-6 col-s-3">6 columns on mobile, 3 on tablet and desktop</div>
-  <div class="col-6 col-s-9">6 columns on mobile, 9 on tablet and desktop</div>
   <div class="col-6 col-s-4 col-m-3">6 columns on mobile, 4 on tablet, 3 on desktop</div>
 </div>
 ```
+[Example on CodePen](https://codepen.io/moritzebeling/pen/eYvBRww?editors=1100)
