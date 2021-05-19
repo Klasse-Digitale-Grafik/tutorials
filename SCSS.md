@@ -24,10 +24,10 @@ sass -v
 ```
 
 Maybe you have some setup like
-```
+```bash
 index.html
 assets
-  - css # rename to scss
+  css # rename to scss
     styles.css # rename to styles.scss
 ```
 If you now run
@@ -35,12 +35,12 @@ If you now run
 sass --watch assets/scss:assets/css
 ```
 all `.scss` files inside `assets/scss` will be processed to `.css` files inside `assets/css`, everytime you make a change and save that. That results in a structure like
-```
+```bash
 index.html
 assets
-  - css # compiled files only for the browser
+  css # compiled files only for the browser
     styles.css
-  - scss # original files for you to work in
+  scss # original files for you to work in
     styles.scss
 ```
 
