@@ -95,8 +95,29 @@ sup {
 - [All CSS font rules](https://css-tricks.com/almanac/properties/f/font/)
 - [Scale font-sizes with clamp()](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/)
 - [Kerning](https://css-tricks.com/almanac/properties/f/font-kerning/)
-- [OpenType features](https://developer.mozilla.org/de/docs/Web/CSS/font-feature-settings)
 - [type.js](http://typejs.org/)
+
+## Open type features
+If a font provides open type features, you can also use them on your website:
+
+```css
+h1 {
+    /* use alternates set 7 */
+    font-feature-settings: "ss07";
+}
+h6 {
+    /* switch on small caps */
+    font-feature-settings: "smcp" on;
+}
+table {
+    /* tabular figures */
+    font-feature-settings: "tnum";
+}
+```
+
+- [OpenType features](https://developer.mozilla.org/de/docs/Web/CSS/font-feature-settings)
+
+To find out, which features you font provides, it is often stated at the type foundry website or specimen PDF. You can also open the typeface in InDesign or Glyphs to find out.
 
 ### Hyphanation and word breaking
 
