@@ -52,8 +52,10 @@ So now you can start working with SASS/SCSS inside your `assets/scss` folder. Ma
 1. **Nested syntax** that better represents the nested structure of your HTML
 ```scss
 header {
+  /* select all h1 inside header elements */
   h1 {
     font-size: 2rem;
+    /* with & you can connect to the parent rule, resulting in h1:before */
     &:before {
       content: '–';
     }
@@ -81,6 +83,7 @@ h1 {
   border: 1px solid currentColor;
   border-radius: 3px;
 }
+/* mixin with argument and default value */
 @mixin hover( $property: color ) {
   transition: $property 300ms ease;
   &:hover {
@@ -120,10 +123,20 @@ h1 {
 ```
 E.g. it can be a good convention to outsource all mixins and variables into a seperate file and then include it into all other files.
 
-5. **Loops**
+5. **Loop** through [lists](https://sass-lang.com/documentation/values/lists) and [maps](https://sass-lang.com/documentation/values/maps)
 ```scss
+/* list variable */
+$sides: top, bottom, left, right;
+@each $side in $sides {
+  /* create classes like .margin-top */
+  .margin-#{$side} {
+    margin-#{$side}: 1rem;
+  }
+}
+/* map variable */
 $steps = ("s": 0.5rem, "m": 1rem, "l": 2rem);
 @each $step, $size in $steps {
+  /* create clases like .margin-s and .margin-m */
   .margin-#{$step} {
     margin: $size;
   }
@@ -142,6 +155,7 @@ $colors = (
   "white": $white,
   "blue": $blue
 );
+/* loop through all colors and create classes like .black .text-black */
 @each $color, $value in $colors {
   .#{$color} {
     background-color: $value;
@@ -154,27 +168,32 @@ $colors = (
 
 2. Creating a grid system
 ```scss
+/* define breakbpoints */
 $breakpoints = (
   "s": 800px,
   "m": 1200px,
   "l": 1600px
 );
-@mixin grid( $columns ) {
-  display: grid;
-  grid-template-columns: repeat(#{$columns}, minmax(0, 1fr));
-  @include column( $columns );
-  @each $name, $width in $breakpoints {
-    @media (min-width: $width) {
-      @include column( $columns, '-#{name}' );
-    }
-  }
-}
 @mixin column( $i, $breakpoint: '' ) {
   @if $i > 0 {
     > .col#{$breakpoint}-#{$i} {
       grid-column-end: span $i;
     }
+    /* call this mixin again, until i goes to zero */
     @include column( $i - 1, $breakpoint );
+  }
+}
+@mixin grid( $columns ) {
+  display: grid;
+  grid-template-columns: repeat(#{$columns}, minmax(0, 1fr));
+  /* define columns for classes like .col-6 */
+  @include column( $columns );
+  /* loop through breakpoints */
+  @each $name, $width in $breakpoints {
+    @media (min-width: $width) {
+      /* define columns for classes like .col-m-6 */
+      @include column( $columns, '-#{name}' );
+    }
   }
 }
 .grid {
