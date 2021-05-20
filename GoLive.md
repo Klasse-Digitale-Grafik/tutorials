@@ -30,7 +30,7 @@ Visit your website with different browsers on different devices. The minimum you
 - Chrome on desktop
 - Safari on iOS
 
-But Firefox and Safari on desktop are also widely used. Also ask a friend or college to visit the website from their devices. Many desktop browsers can simulate how your website woul look on mobile. That’s really helpful, but on a real phone it’s still always different.
+But Safari and Firefox on desktop are also [widely used](https://gs.statcounter.com/browser-market-share). Also ask a friend or college to visit the website from their devices. Many desktop browsers can simulate how your website woul look on mobile. That’s really helpful, but on a real phone it’s still always different.
 
 ### Validate your code
 - [HTML markup validator](https://validator.w3.org)
@@ -41,7 +41,7 @@ But Firefox and Safari on desktop are also widely used. Also ask a friend or col
 Open the browser console and check for any errors or warnings while surfing your website.
 
 ### Minify CSS and JS
-You want to organize your code files in a way that is best readable for human beings. However, that might cost additional file weight. Consider minifying (or uglifying) your code before shipping it.
+You want to organize your code files in a way that is best readable for human beings. However, that might cost additional file weight. Consider minifying (or uglifying) your code before shipping it. There are copy and paste tools for [CSS](https://cssminifier.com) and [JS](https://javascript-minifier.com) and also plugins that you can integrate into your automated workflow (e.g. [Gulp](https://gulpjs.com) or package bundler like [webpack](https://webpack.js.org)).
 
 ### Check loading of assets
 Go to the "network" tab in your browser console and check if there are any resources that take really long to load.
@@ -53,10 +53,10 @@ Go to the "network" tab in your browser console and check if there are any resou
 ```
 - Sometimes browsers need time to **verify external hosts**. You can speed that up with preconnect:
 ```
-<link rel="preconnect" href="https://external-resource.host/some-external-asset.js">
+<link rel="preconnect" href="https://external-resource-host.com">
 ```
 
-- [Prefetching Preloading Prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/) by CSS Tricks
+See [Prefetching Preloading Prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/) by CSS Tricks
 
 ### Compression
 Add gzip compression of text files, e.g. add this to your `.htaccess`:
@@ -82,7 +82,7 @@ So browsers can keep your asets in cache and don’t have to download them a sec
 Check the current PHP version the server uses. If it’s `7.3` or lower, it might be worth updating. As of Spring 2021, current versions are `7.4` and `8`. You should be able to upgrade `7.x` versions without breaking stuff. When upgrading from `5.x`, test all features of your website afterwards.
 
 ### HTTP/2
-If you manage your own server, check if **[HTTP/2](https://tools.keycdn.com/http2-test)** is enabled. This enables servers to answer multiple reguest within one single response, which speeds up your waiting time.
+If you manage your own server, [check if HTTP/2](https://tools.keycdn.com/http2-test) is enabled. This enables servers to answer multiple reguest within one single response, which speeds up your waiting time.
 
 ### sitemap.xml
 A sitemap provides a complete collection of all subpages and images to a bot or even a person:
@@ -101,8 +101,11 @@ Sitemap: /sitemap.xml
 ### OpenGraph metadata
 Go to the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and paste your website URL to get a preview of what social media platforms show, when your link is being posted.
 
-### Google PageSpeed
-Go to [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights) and test your website performance.
+### Let the tests begin
+- [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights)
+- [Sitechecker](https://sitechecker.pro)
+- [web.dev Measure](https://web.dev/measure/)
 
-### Sitechecker
-Go to [Sitechecker](https://sitechecker.pro) and test your website.
+## Read more
+
+- [Fast load times](https://web.dev/fast/#lazy-load-images-and-video) on web.dev
