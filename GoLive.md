@@ -4,10 +4,10 @@ Congratulations, your website is ready to be released in the open world wide int
 
 ## GoLive checklist
 
-### Test on live server `general`
+### Test on live server
 Upload the website to the internet and clear your browser and CMS caches. If you don’t want to do that publicly yet, you can do that on some hidden subdomain like `secretly-test.my-website.com`. But it is important to also test under real live circumstances.
 
-### SSL `general`
+### SSL
 The website should be accessable via `https://` and should be redirected from `http://` to `https://`.
 You can do that in your `.htaccess`:
 ```
@@ -21,9 +21,6 @@ Once you go https, make sure that all your assets are also referenced via https.
 - [CSS code validator](https://jigsaw.w3.org/css-validator/)
 - [Check for broken links](https://validator.w3.org/checklink)
 
-### Minify CSS and JS `speed`
-You want to organize your code files in a way that is best readable for human beings. However, that might cost additional file weight. Consider minifying (or uglifying) your code before shipping it.
-
 ### Browsers and devices `debug`
 Visit your website with different browsers on different devices. The minimum you will have to do is:
 - Chrome on desktop
@@ -33,6 +30,9 @@ But Firefox and Safari on desktop are also widely used. Also ask a friend or col
 
 ### Check browser console `debug`
 Open the browser console and check for any errors or warnings while surfing your website.
+
+### Minify CSS and JS `speed`
+You want to organize your code files in a way that is best readable for human beings. However, that might cost additional file weight. Consider minifying (or uglifying) your code before shipping it.
 
 ### Check loading of assets `speed`
 Go to the "network" tab in your browser console and check if there are any resources that take really long to load.
@@ -67,6 +67,15 @@ So browsers can keep your asets in cache and don’t have to download them a sec
 ```
 > This keeps everythigng in cache for 2 years, so once you make changes to one of your assets, remember to rename it or add a query parameter for [cache busting](https://css-tricks.com/strategies-for-cache-busting-css/): `styles.css?version=2`.
 
+### PHP Version `speed`
+Check the current PHP version the server uses. If it’s `7.3` or lower, it might be worth updating. As of Spring 2021, current versions are `7.4` and `8`. You should be able to upgrade `7.x` versions without breaking stuff. When upgrading from `5.x`, test all features of your website afterwards.
+
+### HTTP/2 `speed`
+If you manage your own server, check if **[HTTP/2](https://tools.keycdn.com/http2-test)** is enabled. This enables servers to answer multiple reguest within one single response, which speeds up your waiting time.
+
+### Google PageSpeed `speed`
+Go to [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights) and test your website performance.
+
 ### sitemap.xml `seo`
 A sitemap provides a complete collection of all subpages and images to a bot or even a person:
 - [sitemaps.org](https://www.sitemaps.org/protocol.html) official documentation
@@ -84,11 +93,5 @@ Sitemap: /sitemap.xml
 ### OpenGraph metadata `seo`
 Go to the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and paste your website URL to get a preview of what social media platforms show, when your link is being posted.
 
-### PHP Version `speed`
-Check the current PHP version the server uses. If it’s `7.3` or lower, it might be worth updating. As of Spring 2021, current versions are `7.4` and `8`. You should be able to upgrade `7.x` versions without breaking stuff. When upgrading from `5.x`, test all features of your website afterwards.
-
-### HTTP/2 `speed`
-If you manage your own server, check if **[HTTP/2](https://tools.keycdn.com/http2-test)** is enabled. This enables servers to answer multiple reguest within one single response, which speeds up your waiting time.
-
-### Google PageSpeed `speed`
-Go to [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights) and test your website performance.
+### Sitechecker `seo`
+Go to [Sitechecker](https://sitechecker.pro) and test your website.
