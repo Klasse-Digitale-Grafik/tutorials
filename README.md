@@ -18,6 +18,7 @@ Growing collection of hopefully helpful tutorials.
 **Website publishing**
 - [FTP/SFTP File Transfer](FTP.md)
 - [Webhosting & Domain](Webhosting-Domain.md)
+- [GoLive](GoLive.md)
 
 Ideas for future articles: HTML, PHP, JavaScript, CMS, ...
 
