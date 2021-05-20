@@ -87,7 +87,7 @@ If you manage your own server, [check if HTTP/2](https://tools.keycdn.com/http2-
 ### sitemap.xml
 A sitemap provides a complete collection of all subpages and images to a bot or even a person:
 - [sitemaps.org](https://www.sitemaps.org/protocol.html) official documentation
-- [Docy by Google](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap?hl=de)
+- [Google Tutorial](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap?hl=de)
 - [Kirby plugin](https://getkirby.com/plugins/kirbyzone/sitemapper)
 
 ### robots.txt
