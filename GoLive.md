@@ -4,7 +4,8 @@ Congratulations, your website is ready to be released in the open world wide int
 
 ## GoLive checklist
 
-- [x] **Upload the website** to the internet and clear your browser and CMS caches. If you don’t want to do that publicly yet, you can do that on some hidden subdomain like `secretly-test.my-website.com`. But it is important to also test under real live circumstances.
+### [x] Test on live server
+Upload the website to the internet and clear your browser and CMS caches. If you don’t want to do that publicly yet, you can do that on some hidden subdomain like `secretly-test.my-website.com`. But it is important to also test under real live circumstances.
 
 - [x] Check if the **SSL certificate** works
 The website should be accessable via `https://` and should be redirected from `http://` to `https://`.
