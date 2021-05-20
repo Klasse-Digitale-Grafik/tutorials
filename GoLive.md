@@ -39,12 +39,12 @@ You want to organize your code files in a way that is best readable for human be
 ### Check loading of assets
 Go to the "network" tab in your browser console and check if there are any resources that take really long to load.
 - Sometimes **images** are very large or weren’t resized properly. Consider making your images smaller, use some lazyloading technique and [`srcset`](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) to provide different image sizes for each device size.
-- Sometimes JS files block all other assets from loading when you add them too early in your website. Consider placing it later or at the end of the website or to use some `async`or `defer` settings.
-- Sometimes webfonts are only loaded after the CSS and HTML has been parsed. You can speed that up with preloading:
+- Sometimes **JS** files block all other assets from loading when you add them too early in your website. Consider placing it later or at the end of the website or to use some `async`or `defer` settings.
+- Sometimes **webfonts** are only loaded after the CSS and HTML has been parsed. You can speed that up with preloading:
 ```
 <link rel="preload" href="/assets/fonts/webfont.woff2" as="font" type="font/woff2" crossorigin>
 ```
-- Sometimes browsers need time to verify an external resource host. You can speed that up with preconnect:
+- Sometimes browsers need time to **verify external hosts**. You can speed that up with preconnect:
 ```
 <link rel="preconnect" href="https://external-resource.host/some-external-asset.js">
 ```
