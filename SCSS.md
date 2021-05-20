@@ -1,14 +1,13 @@
 # SASS & SCSS
 
-**SASS** is a programming language that make it easier to create and **generate CSS** and complex design systems. While SASS also offeres a different way to notate stylesheets, **SCSS** is a syntax flavour inside of SCSS that feels more familiar to the regular CSS syntax. (In this document, the SCSS syntax is used.)
+**SASS** is a programming language that makes it easier to write and **generate CSS**. This is especially helpful for large websites and complex design systems. While SASS also offeres a different way to notate stylesheets, **SCSS** is a syntax flavour inside of SASS that feels more familiar to the regular CSS syntax. (In this document, the SCSS syntax is used.)
 
 Both are supersets of CSS, which means that any real CSS works as well inside of SASS/SCSS files. But they both can not be interpreted by any browser. So any `.sass` and `.scss` files have to be compiled (or preprocessed) to CSS before publishing or uploading to the server.
 
-- [sass-lang.com](https://sass-lang.com)
-- [SASS on Wikipedia](https://de.wikipedia.org/wiki/Sass_(Stylesheet-Sprache))
-- [SASS Basics](https://sass-lang.com/guide)
-- [SASS Documentation](https://sass-lang.com/documentation)
-- [More on CSS](CSS.md)
+- [sass-lang.com](https://sass-lang.com) official website
+- [SASS on Wikipedia](https://en.wikipedia.org/wiki/Sass_(stylesheet_language)) for comparisons between SASS, SCSS and CSS
+- [SASS Basics](https://sass-lang.com/guide) and [SASS Documentation](https://sass-lang.com/documentation)
+- [Regular CSS tutorial](CSS.md)
 
 ## Install
 
@@ -43,7 +42,7 @@ index.html
 assets
   css # compiled files only for the browser
     styles.css
-  scss # original files for you to work in
+  scss # source files for you to work in
     styles.scss
 ```
 So now you can start working with SASS/SCSS inside your `assets/scss` folder. Make sure that in your HTML, you still reference the `assets/css/styles.css` file.
@@ -104,6 +103,7 @@ h1 {
 ```
 
 4. **Modules** let you split up code into seperate files
+> It can be a good convention to outsource all mixins and variables into a seperate files and then include it into all other files.
 ```bash
 scss
   _variables-mixins.scss # module, indicated by leading underscore
@@ -124,7 +124,6 @@ h1 {
 @import 'variables-mixins';
 @import 'typography';
 ```
-E.g. it can be a good convention to outsource all mixins and variables into a seperate file and then include it into all other files.
 
 5. **Loop** through [lists](https://sass-lang.com/documentation/values/lists) and [maps](https://sass-lang.com/documentation/values/maps)
 ```scss
@@ -139,16 +138,16 @@ $sides: top, bottom, left, right;
 /* map variable */
 $steps = ("s": 0.5rem, "m": 1rem, "l": 2rem);
 @each $step, $size in $steps {
-  /* create clases like .margin-s and .margin-m */
+  /* create classes like .margin-s and .margin-m */
   .margin-#{$step} {
     margin: $size;
   }
 }
 ```
 
-## Examples
+## More examples
 
-1. Creating a color sheme
+1. Creating a **color sheme**
 ```scss
 $black: #000;
 $white: #fff;
@@ -158,7 +157,7 @@ $colors = (
   "white": $white,
   "blue": $blue
 );
-/* loop through all colors and create classes like .black .text-black */
+/* loop through all colors and create classes like .black and .text-black */
 @each $color, $value in $colors {
   .#{$color} {
     background-color: $value;
@@ -169,7 +168,7 @@ $colors = (
 }
 ```
 
-2. Creating a grid system, [Example on CodePen](https://codepen.io/moritzebeling/pen/eYvBRww?editors=1100)
+2. Creating a **grid system** ([Example on CodePen](https://codepen.io/moritzebeling/pen/eYvBRww?editors=1100))
 ```scss
 /* define breakbpoints */
 $breakpoints: (
@@ -201,6 +200,16 @@ $breakpoints: (
 }
 .grid {
   @include grid( 12 );
+  background-color: #ccc;
+  gap: 3px;
+  padding: 3px;
+  box-sizing: border-box;
+  > [class*="col"] {
+    padding: 3px;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+  }
 }
 ```
 ```html

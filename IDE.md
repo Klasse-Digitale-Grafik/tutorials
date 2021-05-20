@@ -38,3 +38,6 @@ Popularity of IDEs by [State of CSS 2020](https://2020.stateofcss.com/en-US/othe
 - [Live Server](https://atom.io/packages/atom-live-server) plugin to open a live server with hot reloading
 - [Code Snippets](https://flight-manual.atom.io/using-atom/sections/snippets/)
 - Select [Themes](https://atom.io/themes)
+
+
+It is often also helpful to search for plugins for the framework or language you work in, to find more specialized snippets and productivity helpers.

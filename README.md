@@ -19,7 +19,7 @@ Growing collection of hopefully helpful tutorials.
 - [FTP/SFTP File Transfer](FTP.md)
 - [Webhosting & Domain](Webhosting-Domain.md)
 
-Ideas for future articles: Code-Editor, PHP, JavaScript, HTML, CMS
+Ideas for future articles: HTML, PHP, JavaScript, CMS, ...
 
 ## 👪 Contributing
 
