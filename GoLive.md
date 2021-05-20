@@ -18,6 +18,13 @@ Once you go https, make sure that all your assets are also referenced via https.
 
 In case you don’t have access to a SSL certificate, check if you can create a free [Let’s encrypt](https://letsencrypt.org) certificate. If not, redirect `https` to `http`.
 
+### www or not?
+Decide if you want to have `www.` as part of your domain or not, but choose one option, don’t allow both. E.g. to remove the `www.` add this to your `.htaccess`:
+```
+RewriteCond %{HTTP_HOST} ^www.my-website.com$ [NC]
+RewriteRule ^(.*)$ https://my-website.com/$1 [R=301,L]
+```
+
 ### Browsers and devices
 Visit your website with different browsers on different devices. The minimum you will have to do is:
 - Chrome on desktop
@@ -39,7 +46,7 @@ You want to organize your code files in a way that is best readable for human be
 ### Check loading of assets
 Go to the "network" tab in your browser console and check if there are any resources that take really long to load.
 - Sometimes **images** are very large or weren’t resized properly. Consider making your images smaller, use some lazyloading technique and [`srcset`](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) to provide different image sizes for each device size.
-- Sometimes **JS** files block all other assets from loading when you add them too early in your website. Consider placing it later or at the end of the website or to use some `async`or `defer` settings.
+- Sometimes **JS** files block all other assets from loading when you add them too early in your website. Consider placing it later or at the end of the website or to use some [`async` or `defer`](https://javascript.info/script-async-defer) settings.
 - Sometimes **webfonts** are only loaded after the CSS and HTML has been parsed. You can speed that up with preloading:
 ```
 <link rel="preload" href="/assets/fonts/webfont.woff2" as="font" type="font/woff2" crossorigin>
@@ -48,6 +55,8 @@ Go to the "network" tab in your browser console and check if there are any resou
 ```
 <link rel="preconnect" href="https://external-resource.host/some-external-asset.js">
 ```
+
+- [Prefetching Preloading Prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/) by CSS Tricks
 
 ### Compression
 Add gzip compression of text files, e.g. add this to your `.htaccess`:
