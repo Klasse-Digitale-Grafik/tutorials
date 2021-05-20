@@ -16,13 +16,14 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 Once you go https, make sure that all your assets are also referenced via https. Browsers won’t allow the use of different protocols within one website.
 
+In case you don’t have access to a SSL certificate, check if you can create a free [Let’s encrypt](https://letsencrypt.org) certificate. If not, redirect `https` to `http`.
+
 ### Browsers and devices
 Visit your website with different browsers on different devices. The minimum you will have to do is:
 - Chrome on desktop
 - Safari on iOS
 
 But Firefox and Safari on desktop are also widely used. Also ask a friend or college to visit the website from their devices. Many desktop browsers can simulate how your website woul look on mobile. That’s really helpful, but on a real phone it’s still always different.
-
 
 ### Validate your code
 - [HTML markup validator](https://validator.w3.org)
