@@ -136,7 +136,7 @@ $sides: top, bottom, left, right;
   }
 }
 /* map variable */
-$steps = ("s": 0.5rem, "m": 1rem, "l": 2rem);
+$steps: ("s": 0.5rem, "m": 1rem, "l": 2rem);
 @each $step, $size in $steps {
   /* create classes like .margin-s and .margin-m */
   .margin-#{$step} {
@@ -152,7 +152,7 @@ $steps = ("s": 0.5rem, "m": 1rem, "l": 2rem);
 $black: #000;
 $white: #fff;
 $blue: #00f;
-$colors = (
+$colors: (
   "black": $black,
   "white": $white,
   "blue": $blue
