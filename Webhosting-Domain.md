@@ -40,11 +40,11 @@ Some providers that offer as-easy-as-possible webhosting:
 - [HostEurope](https://www.hosteurope.de/webhosting-loesungen/)
 `€3,50` 100GB
 - [Strato](https://www.strato.de/hosting/)
-`€4` 3 domains, 1 SSL, 50GB 🌱
+`€4` 3 domains, 1 (Non-Wildcard) SSL, 50GB 🌱
 - [Dogado](https://www.dogado.de/website/hosting)
 `€4` 3 domains, 75GB SSD 🌱
 - [Ionos](https://www.ionos.de/hosting/webhosting)
-`€4` 1 domain, 1 SSL, 50GB, 🌱
+`€4` 1 domain, 1 Wildcard SSL, 50GB, 🌱
 - [One](https://www.one.com/de/#PlansAndPrices)
 `€4` 1 SSL, 50GB SSD
 - [DomainFactory](https://www.df.eu/de/webhosting/)
